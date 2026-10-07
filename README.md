@@ -8,9 +8,35 @@ Este repo contiene solo los **datos** (lo que el agente lee y lo que produce). L
 
 ---
 
+## Dos formas de ejecutarse
+
+El sistema funciona de forma **automática** (acciones programadas) y de forma **manual** (hablando con Claude Code).
+
+### Forma automática
+
+Dos acciones programadas, sin intervención humana salvo la validación del calendario:
+
+| Acción | Cuándo | Qué hace |
+|---|---|---|
+| **Vigilancia de noticias** | Periódica (frecuencia por definir; propuesta: semanal) | El `agente-investigador` busca noticias relevantes del sector (normativa, aduanas, logística, eventos, competencia) y las **acumula** en `input/noticias/Noticias_Sector.txt`, con fecha, fuente y resumen. Así, cuando llega el momento de planificar, el material ya está reunido. |
+| **Calendario del mes siguiente** | **El día 15 de cada mes** | Lanza el pipeline para el mes siguiente. Parte de todo lo acumulado en `input/`: el `INBOX`, los eventos y campañas, las noticias del sector, los pains y las voces. Genera el calendario y lo envía para validación. |
+
+El día 15 el pipeline se detiene en la **validación humana del calendario** (Fase 2, ver más abajo). Hasta que se valida no se redacta ningún post. Tras la validación continúa solo hasta la aprobación final de los posts.
+
+> **Estado:** estas dos acciones están **por configurar**. Hoy el repo no tiene ninguna acción programada, y el pipeline se lanza a mano.
+
+### Forma manual
+
+Se trabaja directamente con Claude Code, de dos maneras:
+
+1. **Pedir contenido concreto.** Se abre Claude Code y se pide lo que se necesite: un post suelto, un calendario, una tanda para un perfil, o el pipeline completo con `/pipeline-mensual octubre 2026`. Sigue las mismas reglas y voces que la forma automática.
+2. **Meter información.** Se le cuenta a Claude Code lo que se quiera incorporar: una noticia, un evento, una campaña, un cambio de tono, un pain nuevo. Claude Code lo escribe en `input/inbox/INBOX.md`, y el archivista lo clasifica en la siguiente ejecución. También se puede editar el `INBOX.md` directamente (ver más abajo).
+
+---
+
 ## Cómo funciona
 
-Se lanza con un solo comando:
+El pipeline mensual completo se lanza con un solo comando, a mano o desde la acción automática del día 15:
 
 ```
 /pipeline-mensual octubre 2026
@@ -21,7 +47,7 @@ Una orquestación de subagentes, cada uno con una responsabilidad única, recorr
 | Fase | Agente | Qué hace |
 |---|---|---|
 | 0 | `agente-archivista` | Lee `input/inbox/INBOX.md`, clasifica cada línea y la vuelca al archivo de `input/` que le corresponde. Las entradas procesadas pasan a `INBOX_procesado.md`. |
-| 1 | `agente-investigador` | Investiga tendencias, normativas y ferias del mes y decide el **pain prioritario**. Escribe `briefing.md`. |
+| 1 | `agente-investigador` | Investiga tendencias, normativas y ferias del mes, apoyándose en `input/noticias/Noticias_Sector.txt`, y decide el **pain prioritario**. Escribe `briefing.md`. Es el mismo agente que alimenta la vigilancia automática de noticias. |
 | 2 | `agente-calendario` | Construye el calendario aplicando los pilares y las reglas de no-solapamiento. Lo envía como Google Sheets por correo. |
 | 2 | **Validación humana** | **Única pausa del pipeline.** Se valida el calendario en el chat. Hasta entonces no se redacta nada. |
 | 3 | `agente-redactor` | Redacta los posts. Se invoca 5 veces en paralelo, una por perfil, cada una con su documento de voz. |
@@ -45,6 +71,8 @@ input/                              ← lo que LEE la IA
 │   └── Pains_Unificados.txt        ← pains numerados con descripción completa
 ├── eventos/
 │   └── Eventos_Campañas.txt        ← ferias, webinars, lanzamientos, normativas con fecha, campañas
+├── noticias/
+│   └── Noticias_Sector.txt         ← noticias del sector acumuladas por el agente-investigador (se crea en la primera ejecución)
 └── voces/
     ├── Voz_VT.txt                  ← empresa (página de Visual Trans)
     ├── Voz_Ceci.txt                ← Cecilio Labrada
@@ -66,9 +94,9 @@ output/                             ← lo que GENERA la IA, un directorio por m
 
 ---
 
-## Tu único trabajo manual: `input/inbox/INBOX.md`
+## Cómo meter información: `input/inbox/INBOX.md`
 
-Escribe ahí, cuando quieras, cualquier cosa suelta: una noticia, un evento nuevo, un cambio de tono para un perfil, un pain nuevo, una campaña que se activa, un caso de éxito disponible. No hay formato obligatorio, solo la fecha delante:
+Es la única entrada manual de información. Hay dos formas de usarla: decirle a Claude Code lo que quieres añadir y que él lo escriba en el INBOX, o editar el archivo directamente. Puedes añadir, cuando quieras, cualquier cosa suelta: una noticia, un evento nuevo, un cambio de tono para un perfil, un pain nuevo, una campaña que se activa, un caso de éxito disponible. No hay formato obligatorio, solo la fecha delante:
 
 ```
 - 2026-09-22: [texto libre]
