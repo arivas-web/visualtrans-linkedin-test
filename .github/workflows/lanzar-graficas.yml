@@ -65,6 +65,16 @@ jobs:
           MES: ${{ steps.mes.outputs.mes }}
           REPO: ${{ github.repository }}
         run: |
+          # Limpieza: el ID debe tener la forma trig_XXXX (se acepta pegado dentro de la URL
+          # completa) y el token no puede llevar espacios ni saltos de línea.
+          RAW_LEN=${#ROUTINE_ID}
+          ROUTINE_ID=$(printf '%s' "$ROUTINE_ID" | grep -oE 'trig_[A-Za-z0-9]+' | head -n1)
+          ROUTINE_TOKEN=$(printf '%s' "$ROUTINE_TOKEN" | tr -d '[:space:]')
+          if [ -z "$ROUTINE_ID" ]; then
+            echo "::error::GRAFICAS_ROUTINE_ID no contiene un identificador con la forma trig_XXXX (el valor guardado mide $RAW_LEN caracteres). Cópialo del campo URL del disparo API de la rutina: .../routines/trig_XXXX/fire"
+            exit 1
+          fi
+          echo "ID de rutina con formato correcto (${#ROUTINE_ID} caracteres); token de ${#ROUTINE_TOKEN} caracteres."
           BODY=$(jq -n --arg mes "$MES" --arg repo "$REPO" \
             '{text: ({mes:$mes, repo:$repo, txt:("output/"+$mes+"/posts-para-graficas.txt"), csv:("output/"+$mes+"/graficas.csv")} | tojson)}')
           RESP=$(curl -sS -w "\n%{http_code}" -X POST \
