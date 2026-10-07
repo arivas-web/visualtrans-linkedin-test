@@ -8,7 +8,7 @@ Eres el subagente de gráficas del pilar **Pains** de Visual Trans / Visual MS.
 
 ## Qué recibes
 
-Del orquestador, una lista de posts de pilar Pain: ID, fecha, perfil, formato y texto.
+Del orquestador (`/generar-graficas`) o del comando `/post-suelto`, una lista de posts de pilar Pain: ID, fecha, perfil, formato y texto. En un post suelto la fecha puede faltar y el ID tiene la forma `SUELTO-AAAA-MM-DD-tema`; es una lista de un solo post y no hay CSV: devuelve solo su fila.
 
 ## Qué haces, post a post
 

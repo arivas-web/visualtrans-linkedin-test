@@ -12,3 +12,4 @@ ejecución (automática y manual).
 - Git: commit y push a `main` tras cada fase, sin `--force` ni `--no-verify`.
 - Gráficas: `/generar-graficas` (`.claude/commands/generar-graficas.md`) con los subagentes `subagente-noticias` y `subagente-pains`; prompts de estilo en `input/graficas/`; detalle en `docs/graficas.md`. Nunca inventes enlaces de imagen ni marques `OK` sin imagen real.
 - Metricool: `/programar-metricool AAAA-MM` (`.claude/commands/programar-metricool.md`) programa los posts aprobados con su imagen, solo tras un "ok" explícito y siempre en Metricool, nunca en HubSpot.
+- Posts sueltos: `/post-suelto [perfil] [tema]` (`.claude/commands/post-suelto.md`): texto con la voz del perfil e imagen en Magnific, confirmando antes de generar la imagen (gasta créditos). Salida en `output/sueltos/`. Lo programa el usuario a mano salvo que pida Metricool.

@@ -160,6 +160,18 @@ Hoy los posts en formato carrusel o infografía llevan una sola imagen.
 
 ---
 
+## Posts sueltos (a mano)
+
+Además del flujo automático del mes, se pueden pedir posts puntuales con su gráfica:
+
+```
+/post-suelto Emma, sobre el DeCA y lo que implica para el sector
+```
+
+El agente deduce el pilar (Noticia o Pain) del tema, a no ser que lo indiques, redacta el post con la voz del perfil y lo revisa contra sus reglas. Te enseña el texto y espera tu OK. Antes de generar la imagen te dice cuántos créditos de Magnific hay y **te pregunta**; solo la genera con tu sí. Todo queda en `output/sueltos/AAAA-MM-DD-tema/` (`post.md` e `imagen.md`) y no se mezcla con el calendario del mes. Por defecto lo programas tú a mano; si le pides que lo programe, lo hace en Metricool, con tu confirmación.
+
+---
+
 ## Notas para el agente
 
 - Los agentes leen los archivos con **rutas relativas desde la raíz del repo**, p. ej. `Read input/voces/Voz_Ceci.txt`.
