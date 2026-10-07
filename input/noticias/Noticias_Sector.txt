@@ -57,4 +57,46 @@ Formato de cada entrada:
 - Relevancia: Refuerza el ángulo de IA aplicada a logística y automatización documental. Toca pain #3 (procesos manuales) y #2 (ausencia de datos para decidir).
 - Registrada el: 2026-10-07
 
+## El Consejo de la UE aprueba la reforma aduanera (paso previo al Reglamento 2026/2108)
+- Fecha de la noticia: 2026-09-03 (deducida de la URL; artículo no leído; confirmar fecha oficial en EUR-Lex)
+- Fuente: Vinetur (https://www.vinetur.com/amp/20260903106581/european-union-approves-customs-overhaul-that-makes-online-platforms-liable-for-import-duties.html); contexto: https://www.ineaf.es/tribuna/nuevo-codigo-aduanero/
+- Resumen: El Consejo aprueba la reforma del marco aduanero. Crea la autoridad aduanera y el Centro de Datos Aduaneros (ventanilla única, reutilización de datos, IA/ML), hace responsables de los derechos de importación a las plataformas de comercio electrónico de fuera de la UE y crea la figura "trust and check traders". Según extractos: Centro de Datos obligatorio para e-commerce desde 2028-07-01 y para todas las empresas desde 2034-03-01.
+- Relevancia: ALTA. Complementa la entrada del Reglamento 2026/2108. Ángulo: qué cambia para agentes de aduanas y transitarios. Toca pains #7, #17, #4 y #18.
+- Registrada el: 2026-10-07
+
+## FENADISMER alerta de ofertas abusivas y soluciones no conformes para el DeCA
+- Fecha de la noticia: no verificada (anterior al 2026-10-05, según el ID del artículo)
+- Fuente: Trans.info (https://trans.info/es/fenadismer-alerta-sobre-ofertas-abusivas-y-soluciones-no-conformes-para-el-nuevo-documento-de-control-electronico-501790)
+- Resumen: FENADISMER avisa de grandes diferencias de precio entre soluciones de DeCA y de herramientas que pueden no cumplir todos los requisitos legales (PDF nativo, QR, etc.). Basado en el extracto de la búsqueda.
+- Relevancia: ALTA (si se confirma la fecha). Ángulo "cómo elegir una herramienta DeCA conforme". Toca pains #7, #8 y #6.
+- Registrada el: 2026-10-07
+
+## Factura electrónica B2B: orden ministerial de la solución pública (vigencia prevista 2026-10-01)
+- Fecha de la noticia: no verificada. Borrador de la orden: 2026-06-22; RD 238/2026 (BOE 2026-03-31); vigencia prevista 2026-10-01. No confirmado que la orden esté publicada en el BOE.
+- Fuente: https://teamsystem.es/magazine/factura-electronica-obligatoria-proyecto-orden-ministerial/ ; https://interforoabogados.com/contenido-legal/factura-electronica-obligatoria-calendario-definitivo-2026-2030/ ; https://www.consejogestores.org/?p=14916
+- Resumen: Según el borrador, los plazos corren desde la vigencia de la orden: 2027-10-01 para empresas de más de 8 M€ de facturación y 2028-10-01 para el resto. Sanciones de hasta 10.000 € según un extracto.
+- Relevancia: MEDIA. Cuadra con el aplazamiento de Verifactu ya registrado. Toca pains #7 y #3. Confianza media-baja.
+- Registrada el: 2026-10-07
+
+## RDL 25/2026: nuevo paquete de ayudas al combustible para el 4.º trimestre
+- Fecha de la noticia: 2026-09-30 (BOE, según extracto; en vigor 2026-10-01; no verificado en el BOE)
+- Fuente: Trans.info (https://trans.info/es/espana-prorroga-las-ayudas-al-combustible-pero-los-transportistas-cuestionan-las-cuantias-y-los-retrasos-en-los-pagos-506295); contexto: https://finantresnoticias.com/negocios-y-autonomos/transportistas-alivio-gasoleo-gobierno-prorroga-hasta-diciembre/
+- Resumen: Se prorrogan las medidas. La rebaja del Impuesto sobre Hidrocarburos baja a 20 cts/litro en octubre, 13 en noviembre y 6 en diciembre. CETM, ASTIC y FENADISMER critican importes, plazos de pago y gestión.
+- Relevancia: MEDIA. Afecta al margen del cliente transportista. Toca pains #1 y #11.
+- Registrada el: 2026-10-07
+
+## Competencia y soluciones DeCA/eCMR: Routal, Transporeon, Edicom y otros posicionan el tema
+- Fecha de la noticia: no verificada (entorno del 2026-10-05)
+- Fuente: https://routal.com/en/blog/deca-guia-practica-checklist-2026 ; https://www.transporeon.com/en/community/events/the-road-to-compliance-preparing-for-spain-and-eu-digital-freight-mandates ; https://edicomgroup.com/es/blog/documento-control-administrativo-electronico-deca ; https://ga-p.com/publicaciones/guia-para-no-perderte-con-el-nuevo-deca/
+- Resumen: Varios proveedores y despachos publican guías y eventos sobre DeCA y eCMR. La guía de UNO (junio de 2026) queda fuera de la ventana.
+- Relevancia: MEDIA. Señal de saturación del tema DeCA en LinkedIn; conviene diferenciarse con la integración con la operativa aduanera y documental. Toca pains #8, #18 y #6.
+- Registrada el: 2026-10-07
+
+## Guía H7: tasa de tramitación e identificadores de producto (PID) en noviembre (complemento)
+- Fecha de la noticia: finales de septiembre de 2026 (esquemas actualizados desde 2026-09-28; sistema de pruebas con PID y tasa desde 2026-10-01)
+- Fuente: https://sede.agenciatributaria.gob.es/Sede/aduanas/novedades/2026.html ; https://www.fedex.com/es-es/support/clearance/customs-changes/de-minimis.html ; https://www.lexisnexis.co.uk/legal/news/commission-abolishes-150-customs-duty-exemption-for-low-value-e-commerce-imports-introduces-3
+- Resumen: La guía H7 incorpora la tasa de la Unión y los PID. Un extracto habla de una tasa de 2 € por envío desde 2026-11-01 y de derecho fijo de 3 € por tipo de artículo desde 2026-07-01 (hasta 2028-07-01). Cuantías y día exacto sin contrastar: no citarlos hasta verlos en fuente oficial.
+- Relevancia: MEDIA. Da datos a la entrada H7 ya registrada. Toca pains #7 y #8.
+- Registrada el: 2026-10-07
+
 ---
