@@ -1,0 +1,83 @@
+name: Lanzar agente de gráficas
+
+# Se dispara SOLO cuando el pipeline sube un nuevo posts-para-graficas.txt (que se genera
+# únicamente tras la aprobación humana de los posts, Fase 4.5). Este workflow no genera
+# imágenes ni usa Magnific: solo avisa a la rutina "agente-graficas" de la cuenta de
+# Claude de un compañero (API trigger de Routines), que es quien tiene el conector.
+#
+# Secretos necesarios (Settings > Secrets and variables > Actions):
+#   GRAFICAS_ROUTINE_ID     identificador de la rutina (trig_...)
+#   GRAFICAS_ROUTINE_TOKEN  token del disparo por API (se muestra una sola vez al crearlo)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "output/**/posts-para-graficas.txt"
+  workflow_dispatch:
+    inputs:
+      mes:
+        description: "Mes a procesar (AAAA-MM), p. ej. 2026-10"
+        required: true
+
+jobs:
+  disparar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar secretos
+        env:
+          ROUTINE_ID: ${{ secrets.GRAFICAS_ROUTINE_ID }}
+          ROUTINE_TOKEN: ${{ secrets.GRAFICAS_ROUTINE_TOKEN }}
+        run: |
+          if [ -z "$ROUTINE_ID" ] || [ -z "$ROUTINE_TOKEN" ]; then
+            echo "::error::Faltan los secretos GRAFICAS_ROUTINE_ID y/o GRAFICAS_ROUTINE_TOKEN. Los crea el dueño de la rutina agente-graficas (claude.ai/code/routines > Add another trigger > API)."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Determinar el mes
+        id: mes
+        env:
+          MES_MANUAL: ${{ github.event.inputs.mes }}
+        run: |
+          if [ -n "$MES_MANUAL" ]; then
+            MES="$MES_MANUAL"
+          else
+            FILE=$(git diff --name-only HEAD~1 HEAD -- 'output/*/posts-para-graficas.txt' | head -n1)
+            MES=$(echo "$FILE" | sed -E 's#output/([^/]+)/posts-para-graficas\.txt#\1#')
+          fi
+          if ! echo "$MES" | grep -qE '^[0-9]{4}-[0-9]{2}$'; then
+            echo "::error::No se pudo determinar el mes (valor: '$MES')."
+            exit 1
+          fi
+          if [ ! -f "output/$MES/posts-para-graficas.txt" ]; then
+            echo "::error::No existe output/$MES/posts-para-graficas.txt"
+            exit 1
+          fi
+          echo "mes=$MES" >> "$GITHUB_OUTPUT"
+
+      - name: Disparar la rutina agente-graficas
+        env:
+          ROUTINE_ID: ${{ secrets.GRAFICAS_ROUTINE_ID }}
+          ROUTINE_TOKEN: ${{ secrets.GRAFICAS_ROUTINE_TOKEN }}
+          MES: ${{ steps.mes.outputs.mes }}
+          REPO: ${{ github.repository }}
+        run: |
+          BODY=$(jq -n --arg mes "$MES" --arg repo "$REPO" \
+            '{text: ({mes:$mes, repo:$repo, txt:("output/"+$mes+"/posts-para-graficas.txt"), csv:("output/"+$mes+"/graficas.csv")} | tojson)}')
+          RESP=$(curl -sS -w "\n%{http_code}" -X POST \
+            "https://api.anthropic.com/v1/claude_code/routines/${ROUTINE_ID}/fire" \
+            -H "Authorization: Bearer ${ROUTINE_TOKEN}" \
+            -H "anthropic-beta: experimental-cc-routine-2026-04-01" \
+            -H "anthropic-version: 2023-06-01" \
+            -H "Content-Type: application/json" \
+            -d "$BODY")
+          CODE=$(echo "$RESP" | tail -n1)
+          echo "$RESP" | sed '$d'
+          if [ "$CODE" -lt 200 ] || [ "$CODE" -ge 300 ]; then
+            echo "::error::La API de rutinas devolvió HTTP $CODE"
+            exit 1
+          fi
+          echo "Rutina disparada para el mes $MES"
