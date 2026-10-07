@@ -73,6 +73,9 @@ input/                              ← lo que LEE la IA
 │   └── Pains_Unificados.txt        ← pains numerados con descripción completa
 ├── eventos/
 │   └── Eventos_Campañas.txt        ← ferias, webinars, lanzamientos, normativas con fecha, campañas
+├── graficas/
+│   ├── prompt-noticias.txt         ← estilo de las imágenes del pilar Noticias
+│   └── prompt-pains.txt            ← estilo de las imágenes del pilar Pains
 ├── noticias/
 │   └── Noticias_Sector.txt         ← noticias del sector acumuladas por el agente-investigador
 └── voces/
@@ -124,13 +127,22 @@ En la siguiente ejecución, el archivista la clasifica y la incorpora a `empresa
 
 ---
 
-## Después de la aprobación
+## Después de la aprobación: las gráficas
 
 Al aprobar los posts, el agente crea `output/AAAA-MM/APROBADO.md` y genera `output/AAAA-MM/posts-para-graficas.txt`: un bloque por post (`ID`, `FECHA`, `PERFIL`, `PILAR`, `FORMATO`, `TEXTO`), sin los casos de éxito.
 
-Ese push dispara el workflow `.github/workflows/lanzar-graficas.yml`, que llama (API de Routines) a la rutina del **agente de gráficas**, que vive en el repo `arivas-web/visualtrans-graficas`. Esa rutina usa el conector de Magnific de la cuenta que la ejecuta: reparte los posts por pilar entre dos subagentes (Noticias y Pains), genera una imagen por post y escribe `output/AAAA-MM/graficas.csv` en este repo, con el ID de cada post y el enlace a su imagen. El formato exacto de entrada y salida está en `docs/contrato.md` de ese repo.
+Subir ese archivo hace que GitHub lance el workflow `.github/workflows/lanzar-graficas.yml`, que avisa a una **rutina de Claude** (la que tiene el conector de Magnific). La rutina trabaja en **este mismo repo**:
 
-Secretos de este repo necesarios: `GRAFICAS_ROUTINE_ID` y `GRAFICAS_ROUTINE_TOKEN`. También se puede lanzar a mano desde Actions (*Lanzar agente de gráficas* → Run workflow, indicando el mes).
+1. Lee el archivo de posts y separa cada post por su pilar (Noticia o Pain).
+2. Pasa cada post al subagente de su pilar (`subagente-noticias`, `subagente-pains`), que genera una imagen en Magnific con el prompt de `input/graficas/`.
+3. Escribe `output/AAAA-MM/graficas.csv` con el ID de cada post y el enlace a su imagen.
+
+Para que funcione, lo único que hay que configurar son **dos secretos** de este repo (Settings → Secrets and variables → Actions), que salen del disparo API de la rutina:
+
+- `GRAFICAS_ROUTINE_ID`: el identificador de la rutina (`trig_…`).
+- `GRAFICAS_ROUTINE_TOKEN`: el token de ese disparo.
+
+Para cambiar el estilo de las imágenes se editan `input/graficas/prompt-noticias.txt` y `prompt-pains.txt`. También se puede lanzar a mano desde Actions (*Lanzar agente de gráficas* → Run workflow, indicando el mes), o desde Claude Code con `/generar-graficas 2026-10 output/2026-10/posts-para-graficas.txt`. El formato exacto de entrada y salida está en `docs/graficas.md`.
 
 ---
 

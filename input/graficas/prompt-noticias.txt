@@ -1,0 +1,23 @@
+PROVISIONAL: prompt inventado para probar el flujo. Sustituir por el prompt de marca real.
+Los colores y el estilo de abajo NO son la identidad real de Visual Trans.
+(Las líneas que empiezan por PROVISIONAL no forman parte del prompt: no se envían a Magnific.)
+
+--- PROMPT ---
+Professional editorial illustration for a LinkedIn news post in the logistics, freight
+forwarding and customs sector (B2B software company). Clean, modern, trustworthy corporate
+look. Flat vector style with subtle depth, generous white space, one clear focal point.
+
+Palette: deep navy blue as the main color, bright orange as a single accent, white and light
+grey backgrounds. No other strong colors.
+
+Visual language: trucks, containers, ports, customs documents, QR codes, maps and digital
+interfaces, drawn in a simplified, symbolic way. The scene must read instantly as "important
+industry news" and convey a sense of change, regulation or a key date.
+
+Composition: vertical 4:5 format for the LinkedIn feed, subject centered, safe margins on all
+sides, calm background. Professional, sober tone: no cartoon characters, no people's faces,
+no stock-photo look, no clutter.
+
+Do not include any text, letters, numbers, logos or watermarks in the image.
+
+Topic of this image (the news item):

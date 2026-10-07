@@ -1,0 +1,25 @@
+PROVISIONAL: prompt inventado para probar el flujo. Sustituir por el prompt de marca real.
+Los colores y el estilo de abajo NO son la identidad real de Visual Trans.
+(Las líneas que empiezan por PROVISIONAL no forman parte del prompt: no se envían a Magnific.)
+
+--- PROMPT ---
+Conceptual illustration for a LinkedIn post about an everyday pain of freight forwarders and
+customs agents: manual work, duplicated data, scattered tools, delays and errors. B2B
+software company, modern corporate look. Flat vector style, a bit more expressive and
+emotional than a news graphic, with one strong visual metaphor.
+
+Palette: deep navy blue as the main color, bright orange as the accent used to highlight the
+problem (the knot, the pile, the bottleneck), white and light grey background.
+
+Visual language: a single clear metaphor of friction, such as tangled cables, a pile of
+paper documents and spreadsheets, repeated copies of the same form, a bottleneck, a maze or a
+broken chain, set in a logistics context (containers, trucks, customs forms). A hint of the
+solution is welcome: one clean, ordered element as contrast to the chaos.
+
+Composition: vertical 4:5 format for the LinkedIn feed, subject centered, safe margins on all
+sides, uncluttered background. Slightly provocative but professional and sober: no cartoon
+characters, no people's faces, no stock-photo look.
+
+Do not include any text, letters, numbers, logos or watermarks in the image.
+
+Pain addressed by this image:

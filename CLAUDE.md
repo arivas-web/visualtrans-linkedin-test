@@ -10,3 +10,4 @@ ejecución (automática y manual).
 - Información nueva del usuario: se escribe en `input/inbox/INBOX.md` con fecha delante; el
   archivista la clasifica en la siguiente ejecución.
 - Git: commit y push a `main` tras cada fase, sin `--force` ni `--no-verify`.
+- Gráficas: `/generar-graficas` (`.claude/commands/generar-graficas.md`) con los subagentes `subagente-noticias` y `subagente-pains`; prompts de estilo en `input/graficas/`; detalle en `docs/graficas.md`. Nunca inventes enlaces de imagen ni marques `OK` sin imagen real.
