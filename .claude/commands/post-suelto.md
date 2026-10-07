@@ -62,20 +62,48 @@ paso 4.
 
 Todos los posts sueltos llevan imagen, salvo que el usuario diga expresamente que no la quiere.
 Pero la imagen **gasta créditos**, así que antes de generarla:
-1. Consulta el saldo con `account_balance` de Magnific y dile el plan y los créditos disponibles.
-2. **Pregunta si la generas.** Sin un "sí" claro no lances nada. Si no hay créditos, dilo y para.
+1. Consulta el saldo con `account_balance` de Magnific.
+2. Dile al usuario **por qué vía se generará**:
+   - **Hay créditos en esta sesión:** se genera aquí (paso 7a).
+   - **No hay créditos (saldo 0):** se genera con la rutina `agente-graficas` de su compañero
+     (paso 7b). Avísale de que implica un **push a `main`** y gastar **créditos de otra persona**.
+3. **Pregunta si la generas** por esa vía. Sin un "sí" claro no lances nada ni hagas push.
 
 ## 7. Generar la imagen
 
+### 7a. Con los créditos de esta sesión
+
 Invoca al subagente del pilar (`subagente-noticias` o `subagente-pains`) pasándole **un solo post**:
 un ID del tipo `SUELTO-AAAA-MM-DD-tema`, la fecha (si hay), el perfil, el formato y el texto. Te
-devuelve el enlace de la imagen o un error. Enséñale la imagen al usuario. Si no le gusta, puede
-pedir otra: cada nueva generación vuelve a gastar créditos, así que pide confirmación de nuevo.
+devuelve el enlace de la imagen o un error. Enséñale la imagen al usuario.
+
+### 7b. Con la rutina `agente-graficas` (sin que el usuario toque el TXT)
+
+El usuario **no** debe crear ni editar ningún TXT: lo haces tú, tras su "sí" del paso 6.
+1. Añade **al final** de `output/AAAA-MM/posts-para-graficas.txt` (AAAA-MM = mes de hoy; si no
+   existe, créalo) un bloque nuevo con el formato de `docs/graficas.md`, ID
+   `SUELTO-AAAA-MM-DD-tema`, `FECHA:` la del post o `sin fecha`, el `PERFIL`, el `PILAR` ya
+   deducido y el texto tal cual. **No toques los bloques existentes ni `graficas.csv`.**
+   Si ya hay una fila con ese ID en `OK`, usa otro ID (p. ej. añade `-v2`).
+2. Commit y push a `main` (sin `--force` ni `--no-verify`). Ese push dispara
+   `.github/workflows/lanzar-graficas.yml`, que llama a la rutina. Si el push a `main` está
+   bloqueado, dilo y para: no lo rodees.
+3. Comprueba con las herramientas de GitHub que el workflow termina en `success` y díselo al
+   usuario. La rutina solo procesa los bloques del TXT cuya fila no esté en `OK` en
+   `graficas.csv`: solo se generará la imagen nueva.
+4. La rutina tarda unos minutos y escribe el resultado en la fila de ese ID de
+   `output/AAAA-MM/graficas.csv` (puede llegar en una rama `claude/...`). Cuando el usuario
+   lo pida, mira el CSV: con `OK` y enlace, enséñale la imagen; con `error`, dile el motivo.
+   Nunca inventes el enlace ni lo des por hecho.
+
+Si no le gusta la imagen, puede pedir otra: cada nueva generación vuelve a gastar créditos, así
+que pide confirmación de nuevo (en 7b, con un ID nuevo `-v2`).
 
 ## 8. Dejarlo guardado
 
-Guarda en la misma carpeta `imagen.md` con el enlace de la imagen, el prompt usado y el estado.
-**No hagas commit ni push** salvo que el usuario lo pida.
+Guarda en la misma carpeta `imagen.md` con el enlace de la imagen (o, en 7b, el ID del bloque y
+el estado "pendiente de la rutina"), el prompt usado y el estado. Salvo el commit y push del bloque
+del TXT en 7b, **no hagas commit ni push** de nada más a menos que el usuario lo pida.
 
 ## 9. Qué pasa al final
 
@@ -90,5 +118,5 @@ Guarda en la misma carpeta `imagen.md` con el enlace de la imagen, el prompt usa
 
 - Nunca redactes casos de éxito ni inventes datos, cifras o fechas.
 - Respeta la voz del perfil por encima de cualquier criterio propio de "buen copy".
-- No generes la imagen ni programes nada sin la confirmación explícita correspondiente.
-- No mezcles estos posts con el calendario del mes ni con `graficas.csv`.
+- No generes la imagen, no hagas push a `main` ni programes nada sin la confirmación explícita correspondiente.
+- No mezcles estos posts con el calendario del mes. En 7b solo añades bloques al final del TXT; `graficas.csv` lo escribe la rutina, nunca tú.
