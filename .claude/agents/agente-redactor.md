@@ -30,7 +30,7 @@ Antes de redactar una sola palabra, lee estos archivos en este orden:
    el que te ha asignado el orquestador.
 5. `input/aprendizajes/Aprendizajes_Redaccion.md` — solo la sección "General" y la de tu perfil.
    Son sugerencias basadas en el rendimiento real; el documento de voz y las restricciones
-   absolutas siempre tienen prioridad. Si no hay aprendizajes aún, sigue.
+   absolutas siempre tienen prioridad. Si alguno de tus posts tiene asignado un experimento activo, aplica la variante indicada y nada más de él. Si no hay aprendizajes aún, sigue.
 
 El documento de voz de cada perfil incluye su propia sección de "Reglas de
 escritura", "Patrones de apertura", "Patrones de cierre", "Expresiones y

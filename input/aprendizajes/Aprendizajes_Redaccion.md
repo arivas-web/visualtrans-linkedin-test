@@ -36,10 +36,18 @@ _Aún no hay datos._
 
 _Aún no hay datos._
 
-Formato de cada entrada:
+Formato de cada entrada (ver `.claude/agents/agente-aprendizajes.md`):
 
 - **[Tema: longitud / apertura / cierre / cifras / formato]** — qué se observa. Confianza: `hipótesis`.
   Evidencia: AAAA-MM (n posts, métrica y valor). Sugerencia para el redactor: …
+
+## Experimentos activos
+
+_Ninguno todavía. Los propone `agente-aprendizajes` cada día 1; el redactor los aplica en los posts que se le asignen._
+
+## Experimentos cerrados
+
+_Ninguno._
 
 ## Observaciones que chocan con la voz o las restricciones (no se aplican)
 

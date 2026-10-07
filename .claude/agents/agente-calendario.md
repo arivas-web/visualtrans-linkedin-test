@@ -28,7 +28,7 @@ alta resonancia).
    comprobar qué pains se usaron y no repetir en exceso.
 5. `input/aprendizajes/Aprendizajes_Calendario.md` — lo aprendido del rendimiento real de meses
    anteriores. Son sugerencias para elegir pains, días y formatos dentro de las reglas fijas; nunca
-   cambian el reparto de pilares, la cadencia ni el no-solapamiento. Si no hay aprendizajes aún, sigue.
+   cambian el reparto de pilares, la cadencia ni el no-solapamiento. Aplica también los "Experimentos activos" que tengan filas asignadas a este calendario, anotándolos en la fila (columna de notas). Si no hay aprendizajes aún, sigue.
 
 ## Perfiles y cadencia (fijo, no cambia nunca)
 

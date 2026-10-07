@@ -57,7 +57,7 @@ Una orquestación de subagentes, cada uno con una responsabilidad única, recorr
 | 4 | `agente-validador` | Comprueba el resultado final contra las restricciones absolutas. Escribe `validacion.md`. |
 | 4.5 | **Aprobación humana** | Se aprueban los posts ya validados. Al aprobar se crea `output/AAAA-MM/APROBADO.md`. |
 
-Fuera del ciclo mensual hay una rutina que corre **el día 1 de cada mes**: `agente-metricas` recoge el rendimiento del mes anterior (`rendimiento.csv`) y `agente-aprendizajes` actualiza `input/aprendizajes/Aprendizajes_Calendario.md` (lo lee `agente-calendario`) y `input/aprendizajes/Aprendizajes_Redaccion.md` (lo lee `agente-redactor`). Son sugerencias acumulativas con nivel de confianza; nunca mandan sobre las reglas fijas ni sobre las voces.
+Fuera del ciclo mensual hay una rutina que corre **el día 1 de cada mes**: `agente-metricas` recoge el rendimiento del mes anterior (`rendimiento.csv`) y `agente-aprendizajes` (analista estadístico: `scripts/analizar_rendimiento.py` + lectura del texto de los mejores y peores posts + experimentos para el mes siguiente) actualiza `input/aprendizajes/Aprendizajes_Calendario.md` (lo lee `agente-calendario`) y `input/aprendizajes/Aprendizajes_Redaccion.md` (lo lee `agente-redactor`). Son sugerencias acumulativas con nivel de confianza; nunca mandan sobre las reglas fijas ni sobre las voces.
 
 Todo lo demás es autónomo. Las decisiones que antes requerían confirmación quedan registradas en `log-decisiones.md`, para auditar *después*, sin bloquear la ejecución.
 

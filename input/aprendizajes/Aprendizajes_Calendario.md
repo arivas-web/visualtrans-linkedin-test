@@ -14,10 +14,18 @@ Niveles de confianza: `hipótesis` (1-2 meses o pocos posts), `probable` (3 mese
 
 _Aún no hay datos. Se rellenará tras la primera ejecución._
 
-Formato de cada entrada:
+Formato de cada entrada (ver `.claude/agents/agente-aprendizajes.md`):
 
 - **[Tema: pain / pilar / día / formato / perfil]** — qué se observa. Confianza: `hipótesis`.
   Evidencia: AAAA-MM (n posts, métrica y valor). Sugerencia para el calendario: …
+
+## Experimentos activos
+
+_Ninguno todavía. Los propone `agente-aprendizajes` cada día 1; el calendario los aplica en los posts que se le asignen._
+
+## Experimentos cerrados
+
+_Ninguno._
 
 ## Observaciones que chocan con reglas fijas (no se aplican)
 
