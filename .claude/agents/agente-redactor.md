@@ -28,6 +28,9 @@ Antes de redactar una sola palabra, lee estos archivos en este orden:
 3. `input/empresa/Pains_Unificados.txt` — descripción completa de cada pain para usarlo en la redacción.
 4. `output/[mes]/calendario.md` — identifica solo las filas cuyo Perfil coincida con
    el que te ha asignado el orquestador.
+5. `input/aprendizajes/Aprendizajes_Redaccion.md` — solo la sección "General" y la de tu perfil.
+   Son sugerencias basadas en el rendimiento real; el documento de voz y las restricciones
+   absolutas siempre tienen prioridad. Si no hay aprendizajes aún, sigue.
 
 El documento de voz de cada perfil incluye su propia sección de "Reglas de
 escritura", "Patrones de apertura", "Patrones de cierre", "Expresiones y

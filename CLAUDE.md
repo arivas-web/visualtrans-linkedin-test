@@ -15,7 +15,7 @@ ejecución (automática y manual).
   - Responde → "Ok, me pongo con ello", y luego le pasas el resultado (post y enlace a la imagen).
   Solo si hay un error o un problema se explica, y entonces sí con todo el detalle técnico necesario.
 - Comando del pipeline mensual: `/pipeline-mensual [mes] [año]` (`.claude/commands/pipeline-mensual.md`).
-- Subagentes: `.claude/agents/` (archivista, investigador, calendario, redactor, presentacion, validador, metricas). `agente-metricas` recoge el rendimiento de un mes publicado y escribe `output/AAAA-MM/rendimiento.csv`.
+- Subagentes: `.claude/agents/` (archivista, investigador, calendario, redactor, presentacion, validador, metricas, aprendizajes). Rutina el día 1 de cada mes: `agente-metricas` recoge el rendimiento del mes anterior (`output/AAAA-MM/rendimiento.csv`) y `agente-aprendizajes` actualiza `input/aprendizajes/Aprendizajes_Calendario.md` (lo lee el calendario) y `Aprendizajes_Redaccion.md` (lo lee el redactor). Son sugerencias acumulativas, nunca por encima de las reglas fijas ni de las voces.
 - Rutas siempre relativas a la raíz de este repo (`input/voces/Voz_Ceci.txt`, `output/2026-10/...`).
 - Información nueva del usuario: se escribe en `input/inbox/INBOX.md` con fecha delante; el
   archivista la clasifica en la siguiente ejecución.

@@ -26,6 +26,9 @@ alta resonancia).
 3. `input/eventos/Eventos_Campañas.txt` — eventos y casos de éxito disponibles a reservar.
 4. `output/*/calendario.md` de meses anteriores, si existen (vía Glob) — para
    comprobar qué pains se usaron y no repetir en exceso.
+5. `input/aprendizajes/Aprendizajes_Calendario.md` — lo aprendido del rendimiento real de meses
+   anteriores. Son sugerencias para elegir pains, días y formatos dentro de las reglas fijas; nunca
+   cambian el reparto de pilares, la cadencia ni el no-solapamiento. Si no hay aprendizajes aún, sigue.
 
 ## Perfiles y cadencia (fijo, no cambia nunca)
 

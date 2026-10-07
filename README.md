@@ -57,6 +57,8 @@ Una orquestación de subagentes, cada uno con una responsabilidad única, recorr
 | 4 | `agente-validador` | Comprueba el resultado final contra las restricciones absolutas. Escribe `validacion.md`. |
 | 4.5 | **Aprobación humana** | Se aprueban los posts ya validados. Al aprobar se crea `output/AAAA-MM/APROBADO.md`. |
 
+Fuera del ciclo mensual hay una rutina que corre **el día 1 de cada mes**: `agente-metricas` recoge el rendimiento del mes anterior (`rendimiento.csv`) y `agente-aprendizajes` actualiza `input/aprendizajes/Aprendizajes_Calendario.md` (lo lee `agente-calendario`) y `input/aprendizajes/Aprendizajes_Redaccion.md` (lo lee `agente-redactor`). Son sugerencias acumulativas con nivel de confianza; nunca mandan sobre las reglas fijas ni sobre las voces.
+
 Todo lo demás es autónomo. Las decisiones que antes requerían confirmación quedan registradas en `log-decisiones.md`, para auditar *después*, sin bloquear la ejecución.
 
 ---
@@ -73,6 +75,9 @@ input/                              ← lo que LEE la IA
 │   └── Pains_Unificados.txt        ← pains numerados con descripción completa
 ├── eventos/
 │   └── Eventos_Campañas.txt        ← ferias, webinars, lanzamientos, normativas con fecha, campañas
+├── aprendizajes/
+│   ├── Aprendizajes_Calendario.md  ← lo aprendido del rendimiento, para el calendario
+│   └── Aprendizajes_Redaccion.md   ← lo aprendido del rendimiento, para la redacción
 ├── graficas/
 │   ├── prompt-noticias.txt         ← estilo de las imágenes del pilar Noticias
 │   └── prompt-pains.txt            ← estilo de las imágenes del pilar Pains
@@ -91,6 +96,7 @@ output/                             ← lo que GENERA la IA, un directorio por m
     ├── calendario.md               ← calendario completo
     ├── posts/[perfil].md           ← posts redactados, uno por perfil
     ├── validacion.md               ← informe del agente-validador
+    ├── rendimiento.csv             ← métricas reales de los posts publicados (agente-metricas)
     ├── log-decisiones.md           ← auditoría de decisiones autónomas
     └── APROBADO.md                 ← solo existe tras la aprobación humana
 ```
