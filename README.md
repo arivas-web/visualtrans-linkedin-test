@@ -146,6 +146,20 @@ Para cambiar el estilo de las imágenes se editan `input/graficas/prompt-noticia
 
 ---
 
+## Último paso: programar en Metricool
+
+Cuando `graficas.csv` tiene todas las imágenes, se revisan (los enlaces están en el CSV). Si están bien, se le dice a Claude Code que las dé por buenas y se ejecuta:
+
+```
+/programar-metricool 2026-10
+```
+
+El comando comprueba que cada post tiene su imagen, enseña un resumen (post, fecha y hora, perfil, imagen) y **no programa nada hasta que confirmas con un "ok"**. Entonces crea cada post en Metricool, en la marca de su perfil (Visual Trans, Emma, Cecilio, Enrique, Laura), a las 09:00 de Madrid salvo que indiques otra hora, y deja `output/AAAA-MM/metricool.csv` con el resultado. Se puede relanzar sin duplicar posts. Este paso lo lanzas tú a mano desde Claude Code: nunca corre solo.
+
+Hoy los posts en formato carrusel o infografía llevan una sola imagen.
+
+---
+
 ## Notas para el agente
 
 - Los agentes leen los archivos con **rutas relativas desde la raíz del repo**, p. ej. `Read input/voces/Voz_Ceci.txt`.
