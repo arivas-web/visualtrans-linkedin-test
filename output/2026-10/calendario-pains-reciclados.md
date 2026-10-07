@@ -62,6 +62,7 @@ PERFIL: Visual Trans
 FECHA: 08/10
 PILAR: Pains
 PAIN #: 9
+TEMA: Soporte que no entiende tu operativa — lo que más nos preguntan en el stand
 FORMATO: imagen + texto corto
 ---
 
@@ -84,6 +85,7 @@ PERFIL: Enrique Saa
 FECHA: 08/10
 PILAR: Pains
 PAIN #: 7
+TEMA: "Esta vez llegamos. ¿Y la próxima?" — el miedo al siguiente cambio legal
 FORMATO: texto largo
 ---
 
@@ -112,6 +114,7 @@ PERFIL: Laura Díaz
 FECHA: 09/10
 PILAR: Pains
 PAIN #: 8
+TEMA: Tres pantallas, dos logins, un Excel — y la persona que lo sostiene todo
 FORMATO: texto corto provocador
 ---
 
@@ -134,6 +137,7 @@ PERFIL: Cecilio Labrada
 FECHA: 12/10
 PILAR: Pains
 PAIN #: 12
+TEMA: Lunes 9:15: la tarifa cambia y hay que tocar quince ofertas a mano
 FORMATO: infografía
 ---
 
@@ -156,6 +160,7 @@ PERFIL: Visual Trans
 FECHA: 13/10
 PILAR: Pains
 PAIN #: 16
+TEMA: Un software se prueba en semanas; un proveedor se demuestra en años
 FORMATO: imagen + texto corto
 ---
 
@@ -178,6 +183,7 @@ PERFIL: Emma González
 FECHA: 13/10
 PILAR: Pains
 PAIN #: 4
+TEMA: El mismo dato, tecleado tres veces
 FORMATO: carrusel
 ---
 
@@ -206,6 +212,7 @@ PERFIL: Enrique Saa
 FECHA: 14/10
 PILAR: Pains
 PAIN #: 13
+TEMA: La licencia perpetua se vendía como la opción segura
 FORMATO: texto largo
 ---
 
@@ -232,6 +239,7 @@ PERFIL: Laura Díaz
 FECHA: 15/10
 PILAR: Pains
 PAIN #: 20
+TEMA: Qué ha hecho hoy tu equipo, operación por operación
 FORMATO: texto corto provocador
 ---
 
@@ -256,6 +264,7 @@ PERFIL: Cecilio Labrada
 FECHA: 16/10
 PILAR: Pains
 PAIN #: 11
+TEMA: Cierran por teléfono, sin cotización: el margen se descubre tarde
 FORMATO: infografía
 ---
 
@@ -280,6 +289,7 @@ PERFIL: Emma González
 FECHA: 19/10
 PILAR: Pains
 PAIN #: 5
+TEMA: Viernes, 17:50: el cliente pide el BL y está "en algún correo"
 FORMATO: imagen + texto corto
 ---
 
@@ -304,6 +314,7 @@ PERFIL: Laura Díaz
 FECHA: 20/10
 PILAR: Pains
 PAIN #: 3
+TEMA: Copiar, pegar, copiar otra vez: las horas que nadie mide
 FORMATO: texto corto provocador
 ---
 
@@ -326,6 +337,7 @@ PERFIL: Enrique Saa
 FECHA: 21/10
 PILAR: Pains
 PAIN #: 15
+TEMA: Cambiar de software da miedo, aunque el actual ya no sirva
 FORMATO: texto largo
 ---
 
@@ -358,6 +370,7 @@ PERFIL: Visual Trans
 FECHA: 22/10
 PILAR: Pains
 PAIN #: 6
+TEMA: Pedir una mejora y esperar meses a verla llegar
 FORMATO: imagen + texto corto
 ---
 
@@ -380,6 +393,7 @@ PERFIL: Emma González
 FECHA: 22/10
 PILAR: Pains
 PAIN #: 10
+TEMA: Tu paquete en la app, tu contenedor por teléfono
 FORMATO: carrusel
 ---
 
@@ -408,6 +422,7 @@ PERFIL: Cecilio Labrada
 FECHA: 23/10
 PILAR: Pains
 PAIN #: 2
+TEMA: Fin de trimestre: ¿cuál fue el cliente más rentable? Silencio
 FORMATO: infografía
 ---
 
@@ -432,6 +447,7 @@ PERFIL: Emma González
 FECHA: 26/10
 PILAR: Pains
 PAIN #: 19
+TEMA: La incidencia llega cuando no estás en la oficina
 FORMATO: imagen + texto corto
 ---
 
@@ -454,6 +470,7 @@ PERFIL: Visual Trans
 FECHA: 27/10
 PILAR: Pains
 PAIN #: 17
+TEMA: El estatus OEA también lo sostiene (o no) tu software
 FORMATO: imagen + texto corto
 ---
 
@@ -474,6 +491,7 @@ PERFIL: Enrique Saa
 FECHA: 28/10
 PILAR: Pains
 PAIN #: 18
+TEMA: Tu operativa no vive sola: puertos, navieras, administraciones
 FORMATO: texto largo
 ---
 
@@ -498,6 +516,7 @@ PERFIL: Laura Díaz
 FECHA: 29/10
 PILAR: Pains
 PAIN #: 1
+TEMA: Cotización a ojo, factura final: sorpresa
 FORMATO: texto corto provocador
 ---
 
@@ -520,6 +539,7 @@ PERFIL: Cecilio Labrada
 FECHA: 30/10
 PILAR: Pains
 PAIN #: 14
+TEMA: La primera semana de quien llega nuevo a tráfico
 FORMATO: infografía
 ---
 
