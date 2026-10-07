@@ -1,0 +1,77 @@
+=== 2026-10-002 ===
+FECHA: 2026-10-01
+PERFIL: Emma González
+PILAR: Noticia
+FORMATO: texto largo/opinión
+TEXTO:
+Me hice una pregunta el primer día de FETEIA: ¿hasta dónde llega la digitalización aduanera sin que el transitario pierda el control del proceso?
+
+En Tenerife arranca hoy el XIV Congreso FETEIA-OLTRA, con la aduana y la nueva normativa como protagonistas casi obligados de las primeras sesiones.
+
+Y no es casualidad.
+
+Llevamos meses viendo cómo se aceleran los cambios: DeCA, ICS2, la futura Ley de Movilidad Sostenible. Cada uno con su propia fecha, su propio formulario, su propia curva de aprendizaje.
+
+La digitalización, bien hecha, no complica: ordena. Pero solo si el software del transitario habla el mismo idioma que la normativa, y no al revés.
+
+Lo que estoy escuchando en los pasillos del congreso confirma algo que llevo tiempo defendiendo: el relevo generacional del sector va de la mano de esta digitalización. No se puede pedir a quien se incorpora ahora que aprenda un proceso manual que ya debería estar automatizado.
+
+No se trata solo de cumplir con la ley; se trata de que cumplirla no te cueste media jornada.
+
+¿Cómo se está viviendo esto en tu día a día?
+
+=== 2026-10-005 ===
+FECHA: 2026-10-02
+PERFIL: Laura Díaz
+PILAR: Pain
+FORMATO: texto corto provocador
+TEXTO:
+Tres pantallas. Dos logins. Un Excel de apoyo.
+
+Así hace muchas transitarias el seguimiento de un solo envío, cuando su ERP no está pensado para transitarios.
+
+Y aunque cada pieza por separado "funciona", ese Excel de apoyo es la cifra que nadie quiere ver: es el síntoma de que tu sistema no entiende tu negocio.
+
+No es falta de disciplina del equipo. Es una herramienta genérica intentando hacer un trabajo especializado.
+
+Seamos claros: si necesitas una hoja de cálculo paralela para que tu software "aguante", el problema no es el Excel.
+
+¿Cuántas hojas de apoyo sostienen hoy tu operativa?
+
+=== 2026-10-009 ===
+FECHA: 2026-10-05
+PERFIL: Visual Trans
+PILAR: Noticia
+FORMATO: infografía QR
+TEXTO:
+El 5 de octubre de 2026, el control del transporte nacional deja de sostenerse en papel.
+
+Hoy entra en vigor el DeCA digital obligatorio. Cada expedición de mercancías por carretera dentro de España pasa a llevar su propio código QR, verificable en cualquier control.
+
+No es solo un cambio de formato. Es el fin de una forma de trabajar que llevaba décadas igual.
+
+Para quienes ya operáis con documento electrónico, hoy es un día más. Para quienes seguíais dependiendo del papel, hoy empieza la cuenta atrás real.
+
+Te dejamos toda la información sobre el DeCA en el primer comentario.
+
+=== 2026-10-011 ===
+FECHA: 2026-10-06
+PERFIL: Emma González
+PILAR: Pain
+FORMATO: carrusel
+TEXTO:
+El mismo dato. Tecleado tres veces.
+
+Es lo que sigue pasando en muchas operaciones: el número de matrícula, la referencia del cliente o el peso de la mercancía se introducen una vez en el sistema de gestión, otra vez en la hoja de ruta y otra vez en el documento que se entrega al conductor.
+
+Y ahora, con el DeCA ya en vigor, ese mismo dato debería viajar solo, de un sistema a otro, sin que nadie vuelva a picarlo.
+
+1️⃣ Menos tiempo perdido en tareas que no generan valor.
+
+2️⃣ Menos errores por transcripción manual.
+
+3️⃣ Un dato único, coherente en todos los documentos del expediente.
+
+No se trata solo de cumplir con la normativa; se trata de que cumplirla no te obligue a triplicar el trabajo.
+
+Ese es el valor real: un dato, escrito una sola vez.
