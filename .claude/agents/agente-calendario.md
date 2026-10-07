@@ -1,6 +1,6 @@
 ---
 name: agente-calendario
-description: Construye el calendario mensual completo (65-70 posts en 5 perfiles) aplicando la distribución de pilares (60/30/10), las reglas de no-solapamiento de pains, la asignación de pains por perfil y los días estratégicos, a partir del briefing.md del agente-investigador. Entrega el calendario como Google Sheets enviado por correo a arivas@visualtrans.com y deja el pipeline a la espera de validación humana antes de que se redacte ningún post. Invócalo después de agente-investigador y antes de los agentes redactores.
+description: Construye el calendario mensual completo (65-70 posts en 5 perfiles) aplicando la distribución de pilares (60/30/10), las reglas de no-solapamiento de pains, la asignación de pains por perfil y los días estratégicos, a partir del briefing.md del agente-investigador. Entrega el calendario como Google Sheets enviado por correo a arivas@visualms.com y deja el pipeline a la espera de validación humana antes de que se redacte ningún post. Invócalo después de agente-investigador y antes de los agentes redactores.
 tools: Read, Write, Glob, mcp__Google_Drive__create_file, mcp__Google_Drive__share_file, mcp__Gmail__send_message
 model: sonnet
 ---
@@ -138,10 +138,10 @@ usuario para validar:
    No pongas `disableConversionToGoogleType`: así Drive convierte automáticamente
    el CSV en una hoja de cálculo nativa de Google Sheets.
 3. **Comparte el archivo** con `mcp__Google_Drive__share_file` a
-   `arivas@visualtrans.com` con `role: "writer"`, para que pueda comentar o editar
+   `arivas@visualms.com` con `role: "writer"`, para que pueda comentar o editar
    directamente sobre la hoja si quiere marcar cambios.
 4. **Envía el correo** con `mcp__Gmail__send_message`:
-   - `to`: `["arivas@visualtrans.com"]`
+   - `to`: `["arivas@visualms.com"]`
    - `subject`: `Calendario LinkedIn [Mes Año] — pendiente de validación`
    - `body`/`htmlBody`: el enlace al Google Sheets devuelto por
      `create_file`/`share_file`, un resumen de 2-3 líneas (nº total de posts,
@@ -156,7 +156,7 @@ forma autónoma**. Una vez enviado el correo con el Google Sheets, tu trabajo co
 orquestador que:
 
 - El calendario se generó y el Google Sheets se envió por correo a
-  `arivas@visualtrans.com`.
+  `arivas@visualms.com`.
 - El pipeline debe **pausarse** en este punto hasta que el usuario confirme la
   validación directamente en la conversación (no en el propio Sheets). No decidas
   tú si el calendario está aprobado — esa decisión es exclusivamente del usuario.

@@ -1,5 +1,5 @@
 ---
-description: Ejecuta el pipeline mensual completo de contenido LinkedIn (Visual Trans / Visual MS) de principio a fin, de forma autónoma salvo dos puntos de validación humana obligatorios: el calendario (enviado como Google Sheets por correo a arivas@visualtrans.com, antes de redactar ningún post) y los posts ya redactados y validados (antes de generar el fichero de entrega a gráficas). Uso: /pipeline-mensual [mes] [año]
+description: Ejecuta el pipeline mensual completo de contenido LinkedIn (Visual Trans / Visual MS) de principio a fin, de forma autónoma salvo dos puntos de validación humana obligatorios: el calendario (enviado como Google Sheets por correo a arivas@visualms.com, antes de redactar ningún post) y los posts ya redactados y validados (antes de generar el fichero de entrega a gráficas). Uso: /pipeline-mensual [mes] [año]
 ---
 
 Eres el **agente orquestador** del sistema de contenido LinkedIn de Visual Trans /
@@ -46,7 +46,7 @@ eventos del sector, campañas activas) y **documentarlas** para auditoría poste
 sin preguntar nada al usuario.
 
 El punto (2) se mantiene **explícitamente**: el calendario no se da por válido
-solo. Se envía como Google Sheets por correo a `arivas@visualtrans.com` y el
+solo. Se envía como Google Sheets por correo a `arivas@visualms.com` y el
 pipeline se **detiene después de la Fase 2** hasta que el usuario lo valide en esta
 misma conversación (ver Fase 2 más abajo).
 
@@ -98,7 +98,7 @@ disponibles, campañas/eventos, pain prioritario). Cuando termine:
 Invoca `agente-calendario`, indicándole el mes/año, la ruta de `briefing.md` y la
 ruta de salida `output/[mes-año]/calendario.md`. Este agente, además de escribir
 `calendario.md`, genera un Google Sheets con el mismo contenido y lo envía por
-correo a `arivas@visualtrans.com` para validación. Cuando termine:
+correo a `arivas@visualms.com` para validación. Cuando termine:
 
 - Lee `output/[mes-año]/calendario.md` y verifica tú mismo, de un vistazo, que
   existe la sección "Resumen de distribución" y que no hay señales obvias de
@@ -106,11 +106,11 @@ correo a `arivas@visualtrans.com` para validación. Cuando termine:
 - Traslada la sección "Decisiones de calendario para el log" del propio
   `calendario.md` al log de decisiones del mes, bajo "Construcción del calendario".
 - Añade al log, bajo "Validación del calendario (Fase 2)", que el Google Sheets se
-  generó y el correo se envió a `arivas@visualtrans.com` (con la fecha/hora y el
+  generó y el correo se envió a `arivas@visualms.com` (con la fecha/hora y el
   enlace si lo tienes disponible).
 - **Detente aquí.** No invoques a ningún `agente-redactor` todavía. En tu respuesta
   de esta misma conversación, dile al usuario que el calendario está listo, que se
-  ha enviado por correo a `arivas@visualtrans.com` para validación, y que el
+  ha enviado por correo a `arivas@visualms.com` para validación, y que el
   pipeline queda a la espera de su confirmación **aquí** antes de continuar con la
   Fase 3. Pega también el calendario completo en markdown en el chat, para que pueda
   revisarlo sin abrir el correo.
@@ -306,7 +306,7 @@ bloquea la ejecución: es un registro para auditoría posterior.
 - Decisiones de relleno de huecos, asignación de pains nuevos, etc.
 
 ## Validación del calendario (Fase 2)
-- Fecha/hora de envío del correo a arivas@visualtrans.com y enlace al Google Sheets:
+- Fecha/hora de envío del correo a arivas@visualms.com y enlace al Google Sheets:
 - Resultado de la validación del usuario (aprobado / cambios solicitados):
 - Si hubo cambios solicitados, ronda(s) de corrección y reenvío:
 

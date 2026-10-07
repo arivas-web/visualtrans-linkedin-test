@@ -23,9 +23,9 @@ Dos acciones programadas, sin intervención humana salvo la validación del cale
 
 El día 15 el pipeline se detiene en la **validación humana del calendario** (Fase 2, ver más abajo). Hasta que se valida no se redacta ningún post. Tras la validación continúa solo hasta la aprobación final de los posts.
 
-Se ejecutan como rutinas de Claude Code en la nube: vigilancia los **viernes a las 8:00** y calendario el **día 15 a las 8:00** (hora de Madrid).
+Se ejecutan como rutinas de Claude Code en la nube: vigilancia los **viernes a las 8:00** y calendario el **día 15 a las 9:00** (hora de Madrid).
 
-> **Estado:** rutinas **por crear**. Hasta entonces el pipeline se lanza a mano.
+> **Estado:** creadas. El calendario es la rutina "Calendario LinkedIn mensual — día 15" (abre una conversación nueva cada mes, avisa a `arivas@visualms.com` y espera las validaciones en esa conversación). Necesita los conectores de Gmail, Google Drive y Metricool, que se le añaden desde claude.ai.
 
 ### Forma manual
 
