@@ -30,7 +30,7 @@ al actual.
 3. Cruza cada métrica con su post por fecha y perfil. Añade de los archivos de entrada las
    etiquetas de cada post: perfil, pilar, pain, formato, día de la semana y longitud del texto.
 4. Escribe `output/AAAA-MM/rendimiento.csv` con una fila por post:
-   `id_post, fecha, dia_semana, perfil, pilar, pain, formato, longitud, impresiones, interacciones, clics, engagement_rate, hora` (`hora` = hora de publicación de `metricool.csv`, vacía si no consta).
+   `id_post, fecha, dia_semana, perfil, pilar, pain, formato, longitud, impresiones, interacciones, clics, engagement_rate, hora, texto` (`hora` = hora de publicación de `metricool.csv`, vacía si no consta; `texto` = texto del post tal cual se publicó, para que el analista pueda estudiarlo).
 5. Si una métrica no viene o un post no casa con ningún dato, no lo inventes: deja la celda
    vacía y anótalo en el informe.
 6. Haz commit y push a `main` (nunca `--force` ni `--no-verify`).

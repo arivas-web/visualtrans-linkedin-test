@@ -27,7 +27,8 @@ FDR_Q = 0.10       # tasa de falsos descubrimientos admitida
 PERMS = 5000
 random.seed(7)
 
-DIMS = ["pilar", "pain", "formato", "dia_semana", "perfil", "hora_tramo", "longitud_tramo"]
+DIMS = ["pilar", "categoria", "pain", "formato", "dia_semana", "perfil", "hora_tramo", "longitud_tramo", "apertura",
+        "cierre", "tiene_cifra", "tiene_enlace", "menciona", "lo_brutal", "emojis_tramo", "parrafos_tramo"]
 
 
 def num(v):
@@ -150,7 +151,10 @@ def main():
     ap.add_argument("--corte", required=True, help="fecha de corte AAAA-MM-DD (último día con datos)")
     ap.add_argument("--madurez", type=int, default=7, help="días mínimos desde la publicación")
     ap.add_argument("--salida", default="")
+    ap.add_argument("--desde", default="", help="ignora posts anteriores a AAAA-MM-DD")
+    ap.add_argument("--desde-perfil", nargs="*", default=[], help='"Perfil=AAAA-MM-DD" para ampliar/recortar un perfil')
     a = ap.parse_args()
+    desde_p = dict(x.split("=", 1) for x in a.desde_perfil)
 
     corte = datetime.strptime(a.corte, "%Y-%m-%d")
     filas = cargar(a.csv)
@@ -166,6 +170,9 @@ def main():
         if fecha > corte - timedelta(days=a.madurez):
             inmaduros += 1
             continue
+        lim = desde_p.get(r.get("perfil", ""), a.desde)
+        if lim and fecha < datetime.strptime(lim, "%Y-%m-%d"):
+            continue
         inter, clics = num(r.get("interacciones")), num(r.get("clics"))
         er = num(r.get("engagement_rate"))
         if er is None and inter is not None:
@@ -179,6 +186,11 @@ def main():
             "formato": r.get("formato", ""), "dia_semana": r.get("dia_semana", ""),
             "hora_tramo": tramo_hora(r.get("hora")), "imp": imp, "inter": inter, "clics": clics,
             "er": er, "longitud": longitud,
+            "categoria": r.get("categoria", ""), "apertura": r.get("apertura", ""), "cierre": r.get("cierre", ""),
+            "tiene_cifra": r.get("tiene_cifra", ""), "tiene_enlace": r.get("tiene_enlace", ""),
+            "menciona": r.get("menciona", ""), "lo_brutal": r.get("aqui_viene_lo_brutal", ""),
+            "emojis_tramo": ("" if num(r.get("n_emojis")) is None else "0 emojis" if num(r.get("n_emojis")) == 0 else "1-2 emojis" if num(r.get("n_emojis")) <= 2 else "3+ emojis"),
+            "parrafos_tramo": ("" if num(r.get("n_parrafos")) is None else "<=6 párrafos" if num(r.get("n_parrafos")) <= 6 else "7-12 párrafos" if num(r.get("n_parrafos")) <= 12 else ">12 párrafos"),
         })
 
     out = []
@@ -195,6 +207,14 @@ def main():
     base = {k: st.median(v) for k, v in por_perfil.items()}
     for p in posts:
         p["idx"] = p["imp"] / base[p["perfil"]] if base[p["perfil"]] else None
+    base_er = {}
+    for p in posts:
+        if p["er"] is not None:
+            base_er.setdefault(p["perfil"], []).append(p["er"])
+    base_er = {k: st.median(v) for k, v in base_er.items()}
+    for p in posts:
+        b = base_er.get(p["perfil"])
+        p["idx_er"] = p["er"] / b if (p["er"] is not None and b) else None
     w("\n## Línea base por perfil (mediana de impresiones)\n")
     w("| Perfil | n | Mediana impresiones | Mediana engagement |")
     w("|---|---|---|---|")
@@ -213,43 +233,60 @@ def main():
         for p in posts:
             p["longitud_tramo"] = ""
 
-    # comparaciones grupo vs resto
-    tests = []
-    for dim in DIMS:
-        grupos = {}
-        for p in posts:
-            if p[dim]:
-                grupos.setdefault(p[dim], []).append(p)
-        if len(grupos) < 2:
-            continue
-        for g, ps in grupos.items():
-            resto = [p["idx"] for p in posts if p[dim] and p[dim] != g and p["idx"] is not None]
-            ga = [p["idx"] for p in ps if p["idx"] is not None]
-            if len(ga) < MIN_N or len(resto) < MIN_N:
-                tests.append({"dim": dim, "g": g, "n": len(ga), "insuf": True})
+    # comparaciones grupo vs resto, para impresiones (alcance) y engagement (calidad)
+    def correr(metrica):
+        tests = []
+        for dim in DIMS:
+            grupos = {}
+            for p in posts:
+                if p[dim]:
+                    grupos.setdefault(p[dim], []).append(p)
+            if len(grupos) < 2:
                 continue
-            efecto = st.median(ga) - st.median(resto)
-            p_ = perm_test(ga, resto)
-            lo, hi = boot_ic(ga, resto)
-            ers = [p["er"] for p in ps if p["er"] is not None]
-            tests.append({"dim": dim, "g": g, "n": len(ga), "med": st.median(ga), "efecto": efecto,
-                          "p": p_, "ic": (lo, hi), "er": st.median(ers) if ers else None, "insuf": False})
-    validos = [t for t in tests if not t["insuf"]]
-    pasan = bh([t["p"] for t in validos], FDR_Q)
-    for i, t in enumerate(validos):
-        t["senal"] = (i in pasan) and abs(t["efecto"]) >= MIN_EFECTO and not (t["ic"][0] <= 0 <= t["ic"][1])
+            for g, ps in grupos.items():
+                resto_p = [p for p in posts if p[dim] and p[dim] != g and p[metrica] is not None]
+                ga_p = [p for p in ps if p[metrica] is not None]
+                ga, resto = [p[metrica] for p in ga_p], [p[metrica] for p in resto_p]
+                if len(ga) < MIN_N or len(resto) < MIN_N:
+                    tests.append({"dim": dim, "g": g, "n": len(ga), "insuf": True})
+                    continue
+                efecto = st.median(ga) - st.median(resto)
+                p_ = perm_test(ga, resto)
+                lo, hi = boot_ic(ga, resto)
+                # consistencia entre perfiles: ¿el efecto va en el mismo sentido en cada perfil?
+                signos = []
+                if dim != "perfil":
+                    for pf in {p["perfil"] for p in ga_p}:
+                        a_pf = [p[metrica] for p in ga_p if p["perfil"] == pf]
+                        r_pf = [p[metrica] for p in resto_p if p["perfil"] == pf]
+                        if len(a_pf) >= 3 and len(r_pf) >= 3:
+                            signos.append((st.median(a_pf) - st.median(r_pf)) > 0)
+                tests.append({"dim": dim, "g": g, "n": len(ga), "med": st.median(ga), "efecto": efecto, "p": p_,
+                              "ic": (lo, hi), "signos": signos, "insuf": False})
+        validos = [t for t in tests if not t["insuf"]]
+        pasan = bh([t["p"] for t in validos], FDR_Q)
+        for i, t in enumerate(validos):
+            t["senal"] = (i in pasan) and abs(t["efecto"]) >= MIN_EFECTO and not (t["ic"][0] <= 0 <= t["ic"][1])
+            sg = t["signos"]
+            if len(sg) >= 3:
+                coincide = sum(1 for x in sg if x == (t["efecto"] > 0))
+                t["alcance"] = f"general ({coincide}/{len(sg)} perfiles)" if coincide / len(sg) >= 0.75 else f"específico/mixto ({coincide}/{len(sg)})"
+            else:
+                t["alcance"] = "–"
+        return tests, validos
 
-    w(f"\n## Comparaciones (índice = impresiones / mediana del perfil; 1.00 = normal para ese perfil)\n")
-    w(f"Criterio de señal: n≥{MIN_N} en ambos lados, |efecto|≥{MIN_EFECTO:.0%}, FDR q={FDR_Q} y IC90 % sin cruzar 0. "
-      "El resto es ruido hasta que haya más datos.\n")
-    w("| Dimensión | Grupo | n | Índice mediano | Efecto vs resto | IC90 % | p | Eng. mediano | Señal |")
-    w("|---|---|---|---|---|---|---|---|---|")
-    for t in sorted(validos, key=lambda t: (t["dim"], -t["med"])):
-        er = f"{t['er']:.2%}" if t["er"] is not None else "–"
-        w(f"| {t['dim']} | {t['g']} | {t['n']} | {t['med']:.2f} | {t['efecto']:+.2f} | [{t['ic'][0]:+.2f}, {t['ic'][1]:+.2f}] | {t['p']:.3f} | {er} | {'**SÍ**' if t['senal'] else 'no'} |")
-    insuf = [t for t in tests if t["insuf"]]
-    if insuf:
-        w("\n**Muestra insuficiente (n<%d), no se concluye:** " % MIN_N + ", ".join(f"{t['dim']}={t['g']} (n={t['n']})" for t in insuf))
+    for metrica, titulo in (("idx", "ALCANCE — índice de impresiones"), ("idx_er", "CALIDAD — índice de engagement")):
+        tests, validos = correr(metrica)
+        w(f"\n## {titulo} (1.00 = normal para ese perfil)\n")
+        w(f"Criterio de señal: n≥{MIN_N} en ambos lados, |efecto|≥{MIN_EFECTO:.0%}, FDR q={FDR_Q} y IC90 % sin cruzar 0. "
+          "'Alcance' indica si el efecto va en el mismo sentido en ≥75 % de los perfiles con datos. El resto es ruido hasta que haya más datos.\n")
+        w("| Dimensión | Grupo | n | Índice mediano | Efecto vs resto | IC90 % | p | Señal | Alcance |")
+        w("|---|---|---|---|---|---|---|---|---|")
+        for t in sorted(validos, key=lambda t: (not t["senal"], t["dim"], -t["med"])):
+            w(f"| {t['dim']} | {t['g']} | {t['n']} | {t['med']:.2f} | {t['efecto']:+.2f} | [{t['ic'][0]:+.2f}, {t['ic'][1]:+.2f}] | {t['p']:.3f} | {'**SÍ**' if t['senal'] else 'no'} | {t['alcance']} |")
+        insuf = [t for t in tests if t["insuf"]]
+        if insuf:
+            w("\n**Muestra insuficiente (n<%d), no se concluye:** " % MIN_N + ", ".join(f"{t['dim']}={t['g']} (n={t['n']})" for t in insuf))
 
     # longitud
     pares = [(p["longitud"], p["idx"]) for p in posts if p["longitud"] is not None and p["idx"] is not None]

@@ -78,6 +78,9 @@ input/                              ← lo que LEE la IA
 ├── aprendizajes/
 │   ├── Aprendizajes_Calendario.md  ← lo aprendido del rendimiento, para el calendario
 │   └── Aprendizajes_Redaccion.md   ← lo aprendido del rendimiento, para la redacción
+├── historico/
+│   ├── rendimiento_historico.csv   ← histórico de rendimiento (LinkedIn + Metricool), base del agente-aprendizajes
+│   └── analisis_2026-10-06.md      ← primer análisis completo
 ├── graficas/
 │   ├── prompt-noticias.txt         ← estilo de las imágenes del pilar Noticias
 │   └── prompt-pains.txt            ← estilo de las imágenes del pilar Pains

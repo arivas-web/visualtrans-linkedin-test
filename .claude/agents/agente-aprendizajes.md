@@ -31,6 +31,8 @@ El mes te lo indica el orquestador (AAAA-MM).
 ## Entradas
 
 - `output/AAAA-MM/rendimiento.csv` y los `output/*/rendimiento.csv` de meses anteriores (Glob).
+- `input/historico/rendimiento_historico.csv`: histórico de LinkedIn/Metricool cargado el 6-oct-2026 (348 posts útiles desde julio de 2025; pilar, categoría y pain son inferidos). Es la base de comparación: añade los meses nuevos a esa muestra.
+- `input/historico/analisis_2026-10-06.md`: primer análisis completo, como referencia de lo ya aprendido.
 - `output/AAAA-MM/posts/*.md` (texto de los posts) y `posts-para-graficas.txt`.
 - `input/aprendizajes/Aprendizajes_Calendario.md` y `input/aprendizajes/Aprendizajes_Redaccion.md`.
 - Reglas fijas que nunca se tocan: `.claude/agents/agente-calendario.md`,
@@ -38,10 +40,13 @@ El mes te lo indica el orquestador (AAAA-MM).
 
 ## Método
 
-1. **Ejecuta el análisis**:
-   `python3 -I scripts/analizar_rendimiento.py --corte AAAA-MM-DD --salida output/AAAA-MM/analisis.md output/*/rendimiento.csv`
-   (`--corte` = último día del mes analizado; pasa también los meses anteriores para acumular
-   muestra). Lee el informe completo. No cambies el script salvo que tengas un fallo demostrado.
+1. **Prepara y ejecuta el análisis**:
+   - Enriquece el CSV del mes con los rasgos del texto:
+     `python3 -I scripts/consolidar_historico.py --enriquecer output/AAAA-MM/rendimiento.csv --salida output/AAAA-MM/rendimiento_rasgos.csv`
+     y etiqueta tú, leyendo el texto, `categoria` (pain, normativa, dato_sector, evento, caso_exito, producto, institucional) en esas filas, con el mismo criterio del histórico.
+   - Añade esas filas al histórico (`input/historico/rendimiento_historico.csv`, sin duplicar por `id_post`).
+   - `python3 -I scripts/analizar_rendimiento.py --corte AAAA-MM-DD --desde 2025-07-01 --desde-perfil "Cecilio Labrada=2025-04-01" --salida output/AAAA-MM/analisis.md input/historico/rendimiento_historico.csv`
+     (`--corte` = último día del mes analizado). El informe separa **alcance** (impresiones) y **calidad** (engagement), y marca cada efecto como general o específico según se repita en los perfiles. Lee el informe completo. No cambies el script salvo que tengas un fallo demostrado.
 2. **Revisa la calidad del dato**: cuántos posts se usaron, cuáles quedaron sin datos o inmaduros
    (los posts publicados en los 7 últimos días del mes se vuelven a mirar en la siguiente
    ejecución), y desconfía de cualquier conclusión con muestra pequeña.
