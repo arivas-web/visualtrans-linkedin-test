@@ -1,6 +1,6 @@
 # visualtrans-linkedin
 
-Datos del **agente de contenido LinkedIn de Visual Trans / Visual MS**: empresa española de software B2B para logística y aduanas (eCMR, DUA, Intrastat, ICS2, AEAT, Verifactu).
+Datos del **agente de contenido LinkedIn de Visual Trans.
 
 El agente genera cada mes el calendario editorial de LinkedIn (~65-70 posts en 5 perfiles) con un único punto de validación humana. Objetivo de negocio: **100.000 impresiones/mes**.
 
