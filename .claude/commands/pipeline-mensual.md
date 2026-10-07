@@ -31,6 +31,11 @@ estar desactualizado, haz `git pull --rebase` (o merge) antes de reintentar.
 El mes y año objetivo son: **$ARGUMENTS** (si vienen vacíos, usa el mes natural
 siguiente al actual).
 
+**Dos formas de arrancar:** (1) automática, en la fecha programada por la rutina que
+dispara este comando, y (2) a petición del usuario en el chat. Si el usuario pide algo
+concreto (un mes, una fase, un cambio puntual), haz exactamente eso. En ambos casos los
+resultados se entregan también **en el chat**, no solo en archivos o por correo.
+
 ## Principio rector: cero fricción humana (con dos excepciones deliberadas)
 
 El sistema anterior tenía dos puntos de parada obligatoria: (1) responder preguntas
@@ -107,7 +112,8 @@ correo a `arivas@visualtrans.com` para validación. Cuando termine:
   de esta misma conversación, dile al usuario que el calendario está listo, que se
   ha enviado por correo a `arivas@visualtrans.com` para validación, y que el
   pipeline queda a la espera de su confirmación **aquí** antes de continuar con la
-  Fase 3.
+  Fase 3. Pega también el calendario completo en markdown en el chat, para que pueda
+  revisarlo sin abrir el correo.
 
 ### Reanudación tras la validación
 
@@ -205,9 +211,9 @@ ficheros sueltos):
    solo como referencia a archivo).
 3. El `.pptx` generado en la Fase 3.5, entregado directamente como archivo en la
    conversación, para que la revisión visual sea de un vistazo.
-4. Las rutas del resto de archivos generados (`briefing.md`, `posts/*.md`,
-   `validacion.md`, `log-decisiones.md`) — si el usuario pide ver algún post
-   completo en el chat, pégalo, pero por defecto basta con la ruta.
+4. Los posts completos, pegados en el chat (agrupados por perfil y en orden de
+   fecha), y las rutas del resto de archivos (`briefing.md`, `validacion.md`,
+   `log-decisiones.md`).
 5. **Detente aquí.** Dile explícitamente al usuario que necesitas su aprobación
    sobre el contenido redactado antes de generar el fichero para gráficas, y que
    basta con una confirmación corta (p. ej. "aprobado").
@@ -248,8 +254,16 @@ ej. "aprobado", "perfecto", "adelante"):
    ruta de `posts-para-graficas.txt`. El push de ese fichero dispara el workflow
    `lanzar-graficas.yml`, que avisa a la rutina del agente de gráficas (repo
    `visualtrans-graficas`), que genera las imágenes con Magnific y devuelve
-   `graficas.csv`. Esa generación ocurre fuera de este pipeline; dile que puede ver el
-   estado en la pestaña Actions de este repo.
+   `graficas.csv`. Dile en una frase que las gráficas están en marcha.
+6. **Espera a las gráficas:** haz `git pull` cada pocos minutos (sin `sleep` en primer
+   plano) hasta que llegue a `main` el commit `Gráficas AAAA-MM: ...` con
+   `output/[mes-año]/graficas.csv`. Si el workflow falla o no llega nada en un tiempo
+   razonable, explícaselo con el detalle técnico. Las imágenes se generan **siempre** con
+   esa rutina del compañero, nunca con el Magnific de esta sesión.
+7. **Entrega en el chat** una tabla con cada post (ID, fecha, perfil, pilar) y el enlace
+   a su imagen, señalando las filas en `error` o `pendiente` con su motivo. Después
+   pregunta si quiere que lo programe en Metricool (`/programar-metricool AAAA-MM`, con su
+   OK explícito).
 
 Si en cambio el usuario pide cambios sobre algún post o sobre el calendario,
 resuélvelos como en cualquier otro punto del pipeline (nueva invocación de

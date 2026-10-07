@@ -1,11 +1,11 @@
 ---
-description: Redacta un post suelto de LinkedIn (fuera del calendario mensual) para un perfil, con su gráfica en Magnific, pidiendo confirmación antes de generar la imagen. Uso: /post-suelto [perfil] [tema] [fecha opcional]
+description: Redacta un post suelto de LinkedIn (fuera del calendario mensual) para un perfil, con su gráfica (rutina de gráficas del compañero) y, si se pide, programado en Metricool. Uso: /post-suelto [perfil] [tema] [fecha opcional]
 ---
 
 Eres el **orquestador de posts sueltos** del sistema de contenido LinkedIn de Visual Trans / Visual
 MS. El usuario te pide un post puntual, fuera del calendario del mes, y quieres entregarle **texto
-e imagen** juntos, usando las mismas piezas del pipeline mensual (voces, redactor, subagentes de
-imagen). Todo se hace a mano y con confirmaciones: no hay ningún paso automático.
+e imagen** juntos, usando las mismas piezas del pipeline mensual (voces, redactor, rutina de
+gráficas). Todo va con confirmaciones: no hay ningún paso automático.
 
 Petición del usuario: **$ARGUMENTS**
 
@@ -54,41 +54,70 @@ más de 2 apariciones del pain en el mes). Avisa, no decidas por el usuario.
 
 ## 5. Primera confirmación: el texto
 
-Enseña el post completo, el pilar deducido y los avisos. **Pregunta si está bien o qué cambiar** y
-no pases a la imagen sin un OK claro. Si pide cambios, vuelve a invocar al redactor y repite el
-paso 4.
+Pega el post completo **en el chat** (no solo la ruta), con el pilar deducido y los avisos si los
+hay. Pregunta si está bien o qué cambiar y no sigas sin un OK claro. Si pide cambios, vuelve a
+invocar al redactor y repite el paso 4.
 
-## 6. Segunda confirmación: antes de generar la imagen
+## 6. Segunda confirmación: gráfica y Metricool
 
-Todos los posts sueltos llevan imagen, salvo que el usuario diga expresamente que no la quiere.
-Pero la imagen **gasta créditos**, así que antes de generarla:
-1. Consulta el saldo con `account_balance` de Magnific y dile el plan y los créditos disponibles.
-2. **Pregunta si la generas.** Sin un "sí" claro no lances nada. Si no hay créditos, dilo y para.
+Con el texto validado, pregúntale en una frase qué quiere hacer, p. ej.: "¿Te genero la gráfica
+y te lo programo en Metricool?". Las respuestas posibles:
+- **Gráfica y Metricool** → pasos 7, 8 y 9.
+- **Solo la gráfica** → pasos 7 y 8; lo programa él a mano.
+- **Sin gráfica** (la hace él o no hace falta) → salta al paso 8 y, si quiere, al 9 sin imagen.
 
-## 7. Generar la imagen
+Su respuesta afirmativa es la confirmación para usar los créditos del compañero. Sin ella no
+lances nada.
 
-Invoca al subagente del pilar (`subagente-noticias` o `subagente-pains`) pasándole **un solo post**:
-un ID del tipo `SUELTO-AAAA-MM-DD-tema`, la fecha (si hay), el perfil, el formato y el texto. Te
-devuelve el enlace de la imagen o un error. Enséñale la imagen al usuario. Si no le gusta, puede
-pedir otra: cada nueva generación vuelve a gastar créditos, así que pide confirmación de nuevo.
+## 7. Generar la gráfica con la rutina del compañero
 
-## 8. Dejarlo guardado
+La imagen **nunca** se genera con el Magnific de esta sesión: se genera con la rutina
+`agente-graficas` (cuenta y créditos de un compañero), que dispara
+`.github/workflows/lanzar-graficas.yml` (ver `docs/graficas.md`). No consultes `account_balance`
+ni invoques aquí a `subagente-noticias` / `subagente-pains`.
 
-Guarda en la misma carpeta `imagen.md` con el enlace de la imagen, el prompt usado y el estado.
-**No hagas commit ni push** salvo que el usuario lo pida.
+1. Añade **al final** de `output/AAAA-MM/posts-para-graficas.txt` (mes de la fecha del post o, si
+   no tiene fecha, el mes actual; créalo si no existe) un bloque con ID nuevo, nunca en un
+   archivo aparte:
 
-## 9. Qué pasa al final
+   ```
+   === SUELTO-AAAA-MM-DD-tema ===
+   FECHA: AAAA-MM-DD | sin fecha
+   PERFIL: [perfil]
+   PILAR: Noticia | Pain
+   FORMATO: [formato]
+   TEXTO:
+   [texto del post tal cual]
+   ```
 
-- **Por defecto lo programa el usuario a mano.** Termina diciéndole dónde están el texto
-  (`post.md`) y la imagen (`imagen.md`), y nada más.
-- **Solo si el usuario te pide programarlo**, hazlo en **Metricool** (nunca en HubSpot) siguiendo
-  los pasos y la tabla de perfiles→marcas de `.claude/commands/programar-metricool.md`: para un
-  post necesitas fecha y hora (por defecto las 09:00 de Madrid), enséñale el resumen y programa
-  solo con su OK explícito.
+   Si el usuario pide otra versión de la imagen, añade otro bloque con un ID distinto
+   (`...-v2`): la rutina solo procesa las filas que no estén en `OK`.
+2. Commit y push a `main` de ese TXT (y de la carpeta del suelto). El push dispara el workflow.
+3. Dile al usuario algo corto ("Vale, la gráfica está en marcha, te aviso cuando esté") y
+   **espera al resultado**: la rutina sube a `main` un commit `Gráficas AAAA-MM: ...` con la fila
+   del ID en `output/AAAA-MM/graficas.csv`. Haz `git pull` cada pocos minutos (sin `sleep` en
+   primer plano) hasta que la fila esté en `OK` o en `error`, durante unos 40 minutos como mucho.
+4. Si sale `OK`, pasa al paso 8. Si sale `error`, falla el workflow (pestaña Actions) o no llega
+   nada a tiempo, díselo con el detalle técnico (motivo del CSV, error del workflow) y pregunta
+   cómo seguir.
+
+## 8. Guardar y enseñar el resultado en el chat
+
+Guarda en la carpeta del suelto `imagen.md` con el enlace de la imagen, el ID y el estado, y haz
+commit y push a `main`. Después, en el chat, entrega el resultado completo: el **post escrito** y
+el **enlace a la imagen** (o "sin gráfica" si no se pidió).
+
+## 9. Metricool (solo si lo ha pedido)
+
+Prográmalo en **Metricool** (nunca en HubSpot) siguiendo los pasos y la tabla de perfiles→marcas
+de `.claude/commands/programar-metricool.md`, con la imagen si la hay. Necesitas fecha y hora (por
+defecto las 09:00 de Madrid; si no hay fecha, pídela). Enséñale el resumen (perfil, fecha y hora,
+imagen) y programa solo con su OK explícito. Confírmale en el chat que ha quedado programado.
 
 ## Reglas
 
-- Nunca redactes casos de éxito ni inventes datos, cifras o fechas.
+- Nunca redactes casos de éxito ni inventes datos, cifras, fechas ni enlaces de imagen.
 - Respeta la voz del perfil por encima de cualquier criterio propio de "buen copy".
 - No generes la imagen ni programes nada sin la confirmación explícita correspondiente.
-- No mezcles estos posts con el calendario del mes ni con `graficas.csv`.
+- La imagen siempre con la rutina del compañero, nunca con el Magnific de esta sesión.
+- El resultado (texto e imagen) siempre en el chat, no solo en archivos.
