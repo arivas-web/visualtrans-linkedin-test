@@ -1,7 +1,7 @@
 ---
 name: agente-calendario
 description: Construye el calendario mensual completo (65-70 posts en 5 perfiles) aplicando la distribución de pilares (60/30/10), las reglas de no-solapamiento de pains, la asignación de pains por perfil y los días estratégicos, a partir del briefing.md del agente-investigador. Entrega el calendario como Google Sheets enviado por correo a arivas@visualms.com y deja el pipeline a la espera de validación humana antes de que se redacte ningún post. Invócalo después de agente-investigador y antes de los agentes redactores.
-tools: Read, Write, Glob, mcp__Google_Drive__create_file, mcp__Google_Drive__share_file, mcp__Gmail__send_message
+tools: Read, Write, Glob, mcp__Google_Drive__create_file, mcp__Gmail__send_message
 model: sonnet
 ---
 
@@ -137,14 +137,13 @@ usuario para validar:
    - `contentMimeType`: `text/csv`
    No pongas `disableConversionToGoogleType`: así Drive convierte automáticamente
    el CSV en una hoja de cálculo nativa de Google Sheets.
-3. **Comparte el archivo** con `mcp__Google_Drive__share_file` a
-   `arivas@visualms.com` con `role: "writer"`, para que pueda comentar o editar
-   directamente sobre la hoja si quiere marcar cambios.
+3. **No compartas el archivo** ni pidas permiso para ello: la hoja se crea en el
+   Drive del propio usuario (arivas@visualms.com) y le llega el enlace por correo.
 4. **Envía el correo** con `mcp__Gmail__send_message`:
    - `to`: `["arivas@visualms.com"]`
    - `subject`: `Calendario LinkedIn [Mes Año] — pendiente de validación`
    - `body`/`htmlBody`: el enlace al Google Sheets devuelto por
-     `create_file`/`share_file`, un resumen de 2-3 líneas (nº total de posts,
+     `create_file`, un resumen de 2-3 líneas (nº total de posts,
      distribución real de pilares, pain prioritario del mes) y una petición
      explícita de validación antes de que el pipeline continúe a la redacción.
 
