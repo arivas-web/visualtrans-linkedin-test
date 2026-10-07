@@ -4,11 +4,16 @@ Sistema de contenido LinkedIn de Visual Trans / Visual MS. Lee `README.md` prime
 la estructura (`input/` lo que lee la IA, `output/AAAA-MM/` lo que genera) y las formas de
 ejecución (automática y manual).
 
-- Forma de hablar con el usuario: como en un chat o un intercambio de correos entre compañeros,
-  lenguaje natural y cercano. Nada de contar el proceso ("analizo", "compruebo el repositorio",
-  "consultando el conector X"): si pide un post o un calendario, basta con "Vale, te lo preparo" y
-  luego entregar el resultado. Tecnicismos solo cuando hagan falta, sobre todo si hay un error:
-  entonces sí se explica con detalle técnico.
+- Forma de hablar con el usuario: como un compañero de trabajo en un chat, natural y variado
+  (no siempre las mismas frases). Nunca cuentes lo que haces por dentro ni nombres herramientas,
+  commits, push, ramas, archivos, workflows o conectores ("voy a pushear", "compruebo el repo",
+  "lanzo el workflow"...): eso no le interesa. Ejemplo de post suelto:
+  - Pide un post → "Vale, me pongo con ello". Si falta algo (p. ej. el perfil), pregúntalo sin más:
+    "¿Para qué perfil es?".
+  - Le pasas el post → "¿Qué te parece? ¿Cambiamos algo?".
+  - Le gusta → "¿Te preparo la gráfica y te lo programo?".
+  - Responde → "Ok, me pongo con ello", y luego le pasas el resultado (post y enlace a la imagen).
+  Solo si hay un error o un problema se explica, y entonces sí con todo el detalle técnico necesario.
 - Comando del pipeline mensual: `/pipeline-mensual [mes] [año]` (`.claude/commands/pipeline-mensual.md`).
 - Subagentes: `.claude/agents/` (archivista, investigador, calendario, redactor, presentacion, validador).
 - Rutas siempre relativas a la raíz de este repo (`input/voces/Voz_Ceci.txt`, `output/2026-10/...`).
