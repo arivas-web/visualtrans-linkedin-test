@@ -93,3 +93,19 @@ Cada expedición cuenta como infracción independiente. Un camión con tres env�
 Por eso no se trata solo de tenerlo digital; se trata de poder demostrarlo expedición por expedición.
 
 ¿Tienes ya controlado el DeCA de cada expedición?
+
+
+=== SUELTO-2026-10-07-coste-no-automatizar ===
+FECHA: sin fecha
+PERFIL: Emma González
+PILAR: Pain
+FORMATO: imagen + texto corto
+TEXTO:
+¿Cuánto cuesta realmente no automatizar los procesos manuales de documentación?
+La pregunta que muy pocas empresas se hacen en serio.
+Porque el coste no aparece como una línea en el P&L. Aparece diluido: en horas de trabajo que podrían dedicarse a otra cosa, en errores que hay que corregir, en retrasos que generan reclamaciones, en la imposibilidad de crecer en volumen sin crecer en equipo.
+He visto transitarias que no pueden asumir más clientes no porque les falte capacidad operativa, sino porque el equipo ya está al límite introduciendo datos manualmente.
+Eso no es un problema de personas. Es un problema de arquitectura del proceso.
+La automatización de tareas repetitivas y de bajo valor no es un lujo de empresas grandes. Es la condición para que las medianas puedan competir con las grandes.
+Y la tecnología para hacerlo ya existe y está disponible ahora.
+¿Qué tarea de tu operativa diaria, por pequeña que parezca, te gustaría que fuera instantánea?
