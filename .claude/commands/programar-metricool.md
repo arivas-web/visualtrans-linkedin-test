@@ -67,3 +67,11 @@ no coincide, para y dilo.
 - Los posts en formato carrusel o infografía llevan, por ahora, **una sola imagen**. Avísalo en el
   resumen para que el usuario decida.
 - No modifiques el texto de los posts.
+
+## Notas de la API de Metricool (comprobadas en la prueba del 2026-10-07)
+
+- `getBrandSettings` no recibe parámetros: devuelve todas las marcas. Comprueba en esa lista los `id`.
+- `getScheduledPosts` pide `brandId`, `fromDate`, `toDate` (con desfase, p. ej. `2026-10-01T00:00:00+02:00`) y `timezone`.
+- `createScheduledPost` pide `blogId`, `date` (con desfase: `2026-10-10T12:00:00+02:00`) e `info` con `text`, `providers`, `publicationDate {dateTime, timezone}`, `media`, `linkedinData` y `autoPublish`.
+- Metricool copia la imagen a su almacenamiento (`static.metricool.com`) al programar, así que el token que caduca del enlace de Magnific no afecta si el enlace era válido en ese momento.
+- Antes de programar, mira también si la marca ya tiene un borrador o post con el mismo tema esos días: el texto del repo puede ser otra versión y la comprobación por el inicio del texto no lo detecta.
