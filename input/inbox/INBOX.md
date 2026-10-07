@@ -12,8 +12,8 @@ No hay formato obligatorio. Basta con una línea con fecha delante, así:
 
 En cada ejecución del pipeline (`/pipeline-mensual`), el **agente-archivista** lee
 este archivo completo, clasifica cada entrada, la incorpora al archivo estructurado
-que le corresponde (`Contexto_Visual_Trans.txt`, `Pains_Unificados.txt`,
-`Voz_[perfil].txt` o `Eventos_Campañas.txt`) y la mueve a `INBOX_procesado.md` con la
+que le corresponde (`input/empresa/Contexto_Visual_Trans.txt`, `input/empresa/Pains_Unificados.txt`,
+`input/voces/Voz_[perfil].txt` o `input/eventos/Eventos_Campañas.txt`) y la mueve a `INBOX_procesado.md` con la
 fecha de proceso. Las entradas ambiguas o que contradicen una regla existente no se
 descartan: quedan anotadas como "requiere revisión" en el log de decisiones del mes,
 pero el pipeline continúa igualmente.
