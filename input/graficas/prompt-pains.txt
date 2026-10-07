@@ -23,7 +23,7 @@ Color palette: dominant sky/sea blues and whites. Accents used sparingly: cyan #
 
 Composition: one clear focal point, minimal and uncluttered, only one UI element (or one cohesive group), placed centered or in the upper third without fully covering the main subject.
 
-Logo: place the Visual Trans logo from the "Elementos" reference, in white, small, in the bottom-right corner with comfortable margin. Do not redraw or alter it.
+Logo: place the Visual Trans logo from the "Elementos" reference in the Library, in white, small, in the bottom-right corner with comfortable margin. Do not redraw or alter it.
 
 Format: horizontal 16:9 (1080x607) or 16:10 (1080x675).
 
