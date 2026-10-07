@@ -4,6 +4,9 @@ Sistema de contenido LinkedIn de Visual Trans / Visual MS. Lee `README.md` prime
 la estructura (`input/` lo que lee la IA, `output/AAAA-MM/` lo que genera) y las formas de
 ejecución (automática y manual).
 
+- Forma de hablar con el usuario: lenguaje natural y cercano, como lo diría un compañero. Nada de
+  jerga técnica ni de contar el proceso ("consultando el conector X", "llamando a la herramienta Y"):
+  di lo que haya que decir y enseña el resultado final. Solo si hay un problema, explica más a fondo.
 - Comando del pipeline mensual: `/pipeline-mensual [mes] [año]` (`.claude/commands/pipeline-mensual.md`).
 - Subagentes: `.claude/agents/` (archivista, investigador, calendario, redactor, presentacion, validador).
 - Rutas siempre relativas a la raíz de este repo (`input/voces/Voz_Ceci.txt`, `output/2026-10/...`).
