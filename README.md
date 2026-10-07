@@ -4,7 +4,7 @@ Datos del **agente de contenido LinkedIn de Visual Trans / Visual MS**: empresa 
 
 El agente genera cada mes el calendario editorial de LinkedIn (~65-70 posts en 5 perfiles) con un único punto de validación humana. Objetivo de negocio: **100.000 impresiones/mes**.
 
-Este repo contiene solo los **datos** (lo que el agente lee y lo que produce). La definición de los agentes y del comando vive en `arivas-web/visualtrans-agentes` (`.claude/agents/linkedin/` y `.claude/commands/pipeline-mensual.md`).
+Este repo es **autosuficiente**: contiene los datos (lo que el agente lee y lo que produce) y la definición de los agentes (`.claude/agents/`) y del comando (`.claude/commands/pipeline-mensual.md`). Todas las rutas son relativas a la raíz de este repo.
 
 ---
 
@@ -23,7 +23,9 @@ Dos acciones programadas, sin intervención humana salvo la validación del cale
 
 El día 15 el pipeline se detiene en la **validación humana del calendario** (Fase 2, ver más abajo). Hasta que se valida no se redacta ningún post. Tras la validación continúa solo hasta la aprobación final de los posts.
 
-> **Estado:** estas dos acciones están **por configurar**. Hoy el repo no tiene ninguna acción programada, y el pipeline se lanza a mano.
+Se ejecutan como rutinas de Claude Code en la nube: vigilancia los **viernes a las 8:00** y calendario el **día 15 a las 8:00** (hora de Madrid).
+
+> **Estado:** rutinas **por crear**. Hasta entonces el pipeline se lanza a mano.
 
 ### Forma manual
 
@@ -72,7 +74,7 @@ input/                              ← lo que LEE la IA
 ├── eventos/
 │   └── Eventos_Campañas.txt        ← ferias, webinars, lanzamientos, normativas con fecha, campañas
 ├── noticias/
-│   └── Noticias_Sector.txt         ← noticias del sector acumuladas por el agente-investigador (se crea en la primera ejecución)
+│   └── Noticias_Sector.txt         ← noticias del sector acumuladas por el agente-investigador
 └── voces/
     ├── Voz_VT.txt                  ← empresa (página de Visual Trans)
     ├── Voz_Ceci.txt                ← Cecilio Labrada
@@ -124,7 +126,7 @@ En la siguiente ejecución, el archivista la clasifica y la incorpora a `empresa
 
 ## Después de la aprobación
 
-Crear `output/AAAA-MM/APROBADO.md` y hacer push a `main` es lo único que dispara la entrega a gráficas: un workflow de GitHub Actions avisa al repo del equipo de gráficas (`repository_dispatch`, evento `posts-aprobados`) con las rutas del calendario, los posts y la validación. Ese equipo genera las imágenes con Magnific y publica en Metricool.
+Al aprobar los posts, el agente crea `output/AAAA-MM/APROBADO.md` y genera `output/AAAA-MM/posts-para-graficas.txt`: un bloque por post (`ID`, `FECHA`, `PERFIL`, `PILAR`, `FORMATO`, `TEXTO`), sin los casos de éxito. Ese TXT se entrega al agente de gráficas (repo y sesión de Claude Code de un compañero, con el conector de Magnific), que genera una imagen por post según su pilar y devuelve un CSV con el ID de cada post y el enlace a su imagen. El envío es manual; no hay ninguna automatización que lo dispare.
 
 ---
 

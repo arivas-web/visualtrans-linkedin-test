@@ -1,0 +1,16 @@
+# Noticias del sector
+
+Noticias relevantes para Visual Trans (normativa, aduanas, logística, ferias, IA aplicada a
+logística, competencia), acumuladas semanalmente por el agente-investigador. Solo se
+añaden entradas; no se reescriben las anteriores. El briefing mensual parte de este archivo.
+
+Formato de cada entrada:
+
+## [Titular breve]
+- Fecha de la noticia: AAAA-MM-DD
+- Fuente: [medio y URL]
+- Resumen: [2-3 líneas]
+- Relevancia: [por qué importa y qué pain toca, si alguno]
+- Registrada el: AAAA-MM-DD
+
+---
