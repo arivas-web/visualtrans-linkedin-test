@@ -1,25 +1,30 @@
-PROVISIONAL: prompt inventado para probar el flujo. Sustituir por el prompt de marca real.
-Los colores y el estilo de abajo NO son la identidad real de Visual Trans.
-(Las líneas que empiezan por PROVISIONAL no forman parte del prompt: no se envían a Magnific.)
+STYLE PROMPT – Visual Trans social/blog imagery
 
---- PROMPT ---
-Conceptual illustration for a LinkedIn post about an everyday pain of freight forwarders and
-customs agents: manual work, duplicated data, scattered tools, delays and errors. B2B
-software company, modern corporate look. Flat vector style, a bit more expressive and
-emotional than a news graphic, with one strong visual metaphor.
+Concept: Create an image that accompanies the provided text. Translate its key idea into a realistic editorial photograph combined with ONE carefully crafted digital UI element that works as a clever visual metaphor or witty pun. The meaning must come from the interaction between the real scene and the interface: the UI should feel like it belongs to that world, not pasted on top.
 
-Palette: deep navy blue as the main color, bright orange as the accent used to highlight the
-problem (the knot, the pile, the bottleneck), white and light grey background.
+Digital metaphor (the most important part):
+- The UI element must be specific, believable and polished, like a real product interface: title bars, icons, labels, buttons, states (selected, disabled, loading, error, success), cursors or progress indicators when they add meaning.
+- It should interact with the photo: point at, select, highlight, measure, scan, search, alert or "edit" something real in the scene. Examples of this logic: a targeting crosshair marking a mountain peak below a search bar; containers on a ship rendered as translucent "ghost" shapes next to a "Container status: Empty" label; a "System error" dialog above a ship stuck in a canal; a confirmation dialog questioning a risky customs decision.
+- Short, sharp UI copy with a touch of irony or humor, in Spanish. Maximum one short sentence plus labels.
+- Consistent integration: UI shadows, perspective and scale coherent with the scene's lighting; subtle background blur behind glass panels.
 
-Visual language: a single clear metaphor of friction, such as tangled cables, a pile of
-paper documents and spreadsheets, repeated copies of the same form, a bottleneck, a maze or a
-broken chain, set in a logistics context (containers, trucks, customs forms). A hint of the
-solution is welcome: one clean, ordered element as contrast to the chaos.
+Background (choose what best fits the text):
+- High-quality real photography: freight trains, container ships, ports, trucks, aerial bridges over the sea, landscapes, EU institutional buildings, glass facades, real people working in an office.
+- Or a full-bleed texture: vintage paper map, mineral/sand/marble texture, blurred world map.
+Photo look: bright natural daylight, clear blue skies, clean and slightly desaturated colors, sharp focus, generous negative space, no dark or dramatic mood. Optional subtle film grain.
 
-Composition: vertical 4:5 format for the LinkedIn feed, subject centered, safe margins on all
-sides, uncluttered background. Slightly provocative but professional and sober: no cartoon
-characters, no people's faces, no stock-photo look.
+UI style:
+- Glassmorphism: frosted translucent white panels, rounded corners (~20px), soft drop shadows.
+- Formats: search bars, OS-style dialog windows, floating cards with icon tiles and data pills, chat bubbles, status labels, selection tests, notifications.
+- Icons: flat white line icons inside rounded-square solid tiles. Data in pill-shaped colored labels.
+- Typography: clean geometric sans-serif (Inter-like) for messages; monospaced font (JetBrains Mono-like) for numbers, codes, labels and retro system dialogs.
 
-Do not include any text, letters, numbers, logos or watermarks in the image.
+Color palette: dominant sky/sea blues and whites. Accents used sparingly: cyan #00B4E6, orange #F39200, navy blue #2E5590, bright red #E30613, green #2EAA5C for positive data.
 
-Pain addressed by this image:
+Composition: one clear focal point, minimal and uncluttered, only one UI element (or one cohesive group), placed centered or in the upper third without fully covering the main subject.
+
+Logo: place the Visual Trans logo from the "Elementos" reference, in white, small, in the bottom-right corner with comfortable margin. Do not redraw or alter it.
+
+Format: horizontal 16:9 (1080x607) or 16:10 (1080x675).
+
+Avoid: clutter, several unrelated overlays, long text, generic or decorative UI with no meaning, cartoon or 3D render style, stock clichés (handshakes, smiling suits), dark lighting, heavy filters, neon.
