@@ -14,3 +14,47 @@ Formato de cada entrada:
 - Registrada el: AAAA-MM-DD
 
 ---
+
+## Reglamento (UE) 2026/2108: nuevo Código Aduanero de la Unión y Autoridad Aduanera de la UE
+- Fecha de la noticia: 2026-09-19
+- Fuente: Diario Oficial de la UE de 19/09/2026 según Noticias Jurídicas (https://noticias.juridicas.com/base_datos/Fiscal/1012057-regl-2026-2108-ue-de-16-sep-se-establece-el-codigo-aduanero-de-la-union.html); también Diario del Puerto (https://www.diariodelpuerto.com/logistica/entra-en-vigor-la-reforma-aduanera-de-la-union-europea-OH26656282)
+- Resumen: Se publica el Reglamento que deroga el Reglamento (UE) 952/2013 y crea la Autoridad Aduanera de la UE (sede en Lille) y un centro de datos común. La mayoría de disposiciones se aplican tras 12 meses de adaptación; ventas a distancia y Autoridad, desde el 1 de julio de 2028. Las fuentes consultadas no coinciden en la fecha exacta de entrada en vigor (20 o 21 de septiembre de 2026): verificar en EUR-Lex antes de citarla.
+- Relevancia: Mayor cambio aduanero europeo en años; refuerza obligaciones de los operadores. Toca pain #7 (miedo a no estar adaptado a cambios legales) y pain #17 (homologación OEA) por el refuerzo de obligaciones.
+- Registrada el: 2026-10-07
+
+## Verifactu: Hacienda comunica un cuarto aplazamiento, hasta octubre de 2028
+- Fecha de la noticia: 2026-10-05
+- Fuente: El Español (https://www.elespanol.com/invertia/economia/20261005/hacienda-vuelve-retrasar-verifactu-pospone-implantacion-empresas-autonomos/1003744409037_0.html); Libre Mercado (https://www.libertaddigital.com/libremercado/2026-10-05/hacienda-vuelve-a-retrasar-verifactu-y-alarga-la-incertidumbre-de-los-autonomos-hasta-2028-7470529/); WWWhatsnew (https://wwwhatsnew.com/2026/10/06/hacienda-verifactu-octubre-2028-aplazamiento-factura-electronica-2026/)
+- Resumen: Según la prensa, Hacienda comunica que pospone hasta octubre de 2028 las obligaciones pendientes del RD 1007/2023, sincronizándolas con la factura electrónica obligatoria. Hasta ahora las fechas vigentes eran 1 enero 2027 (IS) y 1 julio 2027 (resto). No se ha verificado si ya está formalizado en el BOE: tratar la fecha como anunciada.
+- Relevancia: Cambia el calendario de adaptación del software de facturación. Toca pain #7 (cambios legales a tiempo); permite un ángulo de "adaptarse sin prisas pero sin pausa".
+- Registrada el: 2026-10-07
+
+## DeCA obligatorio desde el 5 de octubre de 2026 (el eCMR no lo es)
+- Fecha de la noticia: 2026-10-05
+- Fuente: Camión Actualidad (https://www.camionactualidad.es/destacadas-noticias/item/11773-deca-documento-electronico-control-transporte); Transporte y Movilidad (https://www.transporteymovilidad.com/deca-2026-documento-electronico-control-administrativo/); Trans.info (https://trans.info/es/ecmr-en-2026-transportistas-deben-actuar-antes-de-que-termine-la-era-del-papel-434870)
+- Resumen: Desde el 5 de octubre de 2026 el documento de control administrativo del transporte de mercancías por carretera debe ser digital (disposición transitoria octava de la Ley 9/2025 de Movilidad Sostenible; requisitos técnicos en la Resolución de 5 de junio de 2026 de la DGTFC). PDF nativo digital, máx. 5 MB, con QR a URL de descarga HTTPS. Varias fuentes aclaran que el eCMR no es obligatorio en España; lo obligatorio es el DeCA en transporte nacional.
+- Relevancia: Es la noticia del mes para el sector. Toca pain #7 (cambios legales), #3 (procesos manuales) y #5 (gestión documental). Cuidado con confundir DeCA y eCMR en los posts.
+- Registrada el: 2026-10-07
+
+## AEAT: nueva guía de declaraciones H7 (envíos de escaso valor hasta 150 EUR) y webinar de la Comisión
+- Fecha de la noticia: 2026-09-25
+- Fuente: Agencia Tributaria, Novedades de Aduanas 2026 (https://sede.agenciatributaria.gob.es/Sede/aduanas/novedades/2026.html)
+- Resumen: El 25/09/2026 la AEAT publica una nueva versión de la guía de declaraciones H7 y anuncia un seminario web el 1 de octubre de 2026 (10:00h) sobre las novedades de la Comisión Europea en declaraciones de envíos de terceros países dirigidos a particulares.
+- Relevancia: Afecta a operadores de comercio electrónico y agentes de aduanas que presentan H7. Toca pain #7 (cambios legales) y #8 (herramientas no integradas).
+- Registrada el: 2026-10-07
+
+## AEAT: guía técnica G5v2 versión 2.12 (movimiento de mercancías en depósito temporal) con cambios en discrepancias
+- Fecha de la noticia: 2026-09-22
+- Fuente: Agencia Tributaria, Novedades de Aduanas 2026 (https://sede.agenciatributaria.gob.es/Sede/aduanas/novedades/2026.html)
+- Resumen: Nueva versión 2.12 de la guía técnica de la notificación G5v2 con cambios en la gestión de discrepancias, con efectos desde el 22 de septiembre de 2026 según la AEAT. El detalle técnico exacto no se pudo contrastar en la fuente.
+- Relevancia: Ajuste técnico que exige actualizar el software de gestión de depósitos temporales y agentes de aduanas. Toca pain #7 y #6 (proveedor lento en actualizaciones).
+- Registrada el: 2026-10-07
+
+## KinetIA 2026: la AETransporte debate la IA en logística, la falta de conductores y el reto de los datos
+- Fecha de la noticia: 2026-10-02
+- Fuente: AETransporte (https://www.aetransporte.org/2026/10/02/la-ia-en-la-logistica-a-debate-en-kinetia-2026-entre-la-revolucion-tecnologica-y-la-urgencia-de-personal/)
+- Resumen: La Asociación Española del Transporte analiza en KinetIA 2026 el impacto de la inteligencia artificial en la logística, junto a la escasez de personal y la calidad de los datos. Resumen basado en el extracto de la búsqueda; no se leyó el artículo completo.
+- Relevancia: Refuerza el ángulo de IA aplicada a logística y automatización documental. Toca pain #3 (procesos manuales) y #2 (ausencia de datos para decidir).
+- Registrada el: 2026-10-07
+
+---
