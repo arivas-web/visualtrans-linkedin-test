@@ -1,5 +1,5 @@
 ---
-description: Redacta un post suelto de LinkedIn (fuera del calendario mensual) para un perfil, con su gráfica en Magnific, pidiendo confirmación antes de generar la imagen. Uso: /post-suelto [perfil] [tema] [fecha opcional]
+description: Redacta un post suelto de LinkedIn (fuera del calendario mensual) para un perfil y genera su gráfica con la rutina agente-graficas, pidiendo confirmación antes de lanzarla. Uso: /post-suelto [perfil] [tema] [fecha opcional]
 ---
 
 Eres el **orquestador de posts sueltos** del sistema de contenido LinkedIn de Visual Trans / Visual
@@ -61,23 +61,14 @@ paso 4.
 ## 6. Segunda confirmación: antes de generar la imagen
 
 Todos los posts sueltos llevan imagen, salvo que el usuario diga expresamente que no la quiere.
-Pero la imagen **gasta créditos**, así que antes de generarla:
-1. Consulta el saldo con `account_balance` de Magnific.
-2. Dile al usuario **por qué vía se generará**:
-   - **Hay créditos en esta sesión:** se genera aquí (paso 7a).
-   - **No hay créditos (saldo 0):** se genera con la rutina `agente-graficas` de su compañero
-     (paso 7b). Avísale de que implica un **push a `main`** y gastar **créditos de otra persona**.
-3. **Pregunta si la generas** por esa vía. Sin un "sí" claro no lances nada ni hagas push.
+La imagen **siempre** la genera la rutina `agente-graficas` (cuenta de Claude de su compañero,
+con su conector de Magnific y sus créditos), nunca esta sesión: no consultes `account_balance` ni
+invoques a `subagente-noticias`/`subagente-pains` para esto.
 
-## 7. Generar la imagen
+Antes de lanzarla dile al usuario que implica un **push a `main`** y gastar **créditos de otra
+persona**, y **pregunta si la lanzas**. Sin un "sí" claro no hagas push.
 
-### 7a. Con los créditos de esta sesión
-
-Invoca al subagente del pilar (`subagente-noticias` o `subagente-pains`) pasándole **un solo post**:
-un ID del tipo `SUELTO-AAAA-MM-DD-tema`, la fecha (si hay), el perfil, el formato y el texto. Te
-devuelve el enlace de la imagen o un error. Enséñale la imagen al usuario.
-
-### 7b. Con la rutina `agente-graficas` (sin que el usuario toque el TXT)
+## 7. Generar la imagen (rutina `agente-graficas`)
 
 El usuario **no** debe crear ni editar ningún TXT: lo haces tú, tras su "sí" del paso 6.
 1. Añade **al final** de `output/AAAA-MM/posts-para-graficas.txt` (AAAA-MM = mes de hoy; si no
@@ -97,13 +88,13 @@ El usuario **no** debe crear ni editar ningún TXT: lo haces tú, tras su "sí" 
    Nunca inventes el enlace ni lo des por hecho.
 
 Si no le gusta la imagen, puede pedir otra: cada nueva generación vuelve a gastar créditos, así
-que pide confirmación de nuevo (en 7b, con un ID nuevo `-v2`).
+que pide confirmación de nuevo (con un ID nuevo `-v2`).
 
 ## 8. Dejarlo guardado
 
-Guarda en la misma carpeta `imagen.md` con el enlace de la imagen (o, en 7b, el ID del bloque y
+Guarda en la misma carpeta `imagen.md` con el enlace de la imagen (o el ID del bloque y
 el estado "pendiente de la rutina"), el prompt usado y el estado. Salvo el commit y push del bloque
-del TXT en 7b, **no hagas commit ni push** de nada más a menos que el usuario lo pida.
+del TXT, **no hagas commit ni push** de nada más a menos que el usuario lo pida.
 
 ## 9. Qué pasa al final
 
@@ -119,4 +110,4 @@ del TXT en 7b, **no hagas commit ni push** de nada más a menos que el usuario l
 - Nunca redactes casos de éxito ni inventes datos, cifras o fechas.
 - Respeta la voz del perfil por encima de cualquier criterio propio de "buen copy".
 - No generes la imagen, no hagas push a `main` ni programes nada sin la confirmación explícita correspondiente.
-- No mezcles estos posts con el calendario del mes. En 7b solo añades bloques al final del TXT; `graficas.csv` lo escribe la rutina, nunca tú.
+- No mezcles estos posts con el calendario del mes. Solo añades bloques al final del TXT; `graficas.csv` lo escribe la rutina, nunca tú.
