@@ -68,3 +68,28 @@ No es solo un asunto de las navieras; es parte del precio que llega a tu cotizac
 En Visual Trans pensamos que el transitario necesita ver el coste real del flete cuando cotiza.
 
 ¿Ves ese coste cuando cotizas?
+
+
+=== SUELTO-2026-10-07-multas-del-dca ===
+FECHA: 2026-10-10
+PERFIL: Emma González
+PILAR: Noticia
+FORMATO: imagen + texto corto
+TEXTO:
+Desde el 5 de octubre, el papel ya no vale.
+
+📢 El DeCA, el Documento de Control Administrativo del transporte de mercancías por carretera, solo es válido en formato digital ante la Inspección del Transporte Terrestre. Lo marca la disposición transitoria octava de la Ley 9/2025 de Movilidad Sostenible, desarrollada por la Resolución de 5 de junio de 2026 de la Dirección General de Transporte por Carretera y Ferrocarril.
+
+Y no hay prórroga. Ni periodo transitorio adicional.
+
+¿Qué pasa si no lo tienes? La falta del documento, su falta de diligenciado o de datos esenciales es una infracción grave (artículo 141.17 de la LOTT). La multa va de 401 a 600 € (artículo 143.1.d).
+
+Ahora, la clave.
+
+Cada expedición cuenta como infracción independiente. Un camión con tres envíos sin DeCA no es una multa de 600 €: son tres, entre 1.203 y 1.800 €.
+
+⚖️ Y la responsabilidad se reparte. Responden el cargador contractual y el transportista efectivo, según el deber que haya incumplido cada uno. El cargador queda libre si prueba que emitió el DeCA.
+
+Por eso no se trata solo de tenerlo digital; se trata de poder demostrarlo expedición por expedición.
+
+¿Tienes ya controlado el DeCA de cada expedición?
