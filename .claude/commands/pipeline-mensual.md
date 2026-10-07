@@ -245,9 +245,11 @@ ej. "aprobado", "perfecto", "adelante"):
 4. Añade al log de decisiones la sección "Aprobación final de posts (Fase 4.5)"
    con la fecha/hora de la aprobación.
 5. En tu respuesta, confirma al usuario que los posts quedaron aprobados y dile la
-   ruta de `posts-para-graficas.txt`, que es lo que debe enviar a su compañero. No se
-   envía nada automáticamente: la generación de gráficas ocurre fuera de este
-   pipeline, en el agente de gráficas de su compañero.
+   ruta de `posts-para-graficas.txt`. El push de ese fichero dispara el workflow
+   `lanzar-graficas.yml`, que avisa a la rutina del agente de gráficas (repo
+   `visualtrans-graficas`), que genera las imágenes con Magnific y devuelve
+   `graficas.csv`. Esa generación ocurre fuera de este pipeline; dile que puede ver el
+   estado en la pestaña Actions de este repo.
 
 Si en cambio el usuario pide cambios sobre algún post o sobre el calendario,
 resuélvelos como en cualquier otro punto del pipeline (nueva invocación de

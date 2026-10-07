@@ -126,7 +126,11 @@ En la siguiente ejecución, el archivista la clasifica y la incorpora a `empresa
 
 ## Después de la aprobación
 
-Al aprobar los posts, el agente crea `output/AAAA-MM/APROBADO.md` y genera `output/AAAA-MM/posts-para-graficas.txt`: un bloque por post (`ID`, `FECHA`, `PERFIL`, `PILAR`, `FORMATO`, `TEXTO`), sin los casos de éxito. Ese TXT se entrega al agente de gráficas (repo y sesión de Claude Code de un compañero, con el conector de Magnific), que genera una imagen por post según su pilar y devuelve un CSV con el ID de cada post y el enlace a su imagen. El envío es manual; no hay ninguna automatización que lo dispare.
+Al aprobar los posts, el agente crea `output/AAAA-MM/APROBADO.md` y genera `output/AAAA-MM/posts-para-graficas.txt`: un bloque por post (`ID`, `FECHA`, `PERFIL`, `PILAR`, `FORMATO`, `TEXTO`), sin los casos de éxito.
+
+Ese push dispara el workflow `.github/workflows/lanzar-graficas.yml`, que llama (API de Routines) a la rutina del **agente de gráficas**, que vive en el repo `arivas-web/visualtrans-graficas`. Esa rutina usa el conector de Magnific de la cuenta que la ejecuta: reparte los posts por pilar entre dos subagentes (Noticias y Pains), genera una imagen por post y escribe `output/AAAA-MM/graficas.csv` en este repo, con el ID de cada post y el enlace a su imagen. El formato exacto de entrada y salida está en `docs/contrato.md` de ese repo.
+
+Secretos de este repo necesarios: `GRAFICAS_ROUTINE_ID` y `GRAFICAS_ROUTINE_TOKEN`. También se puede lanzar a mano desde Actions (*Lanzar agente de gráficas* → Run workflow, indicando el mes).
 
 ---
 
