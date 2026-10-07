@@ -15,7 +15,7 @@ ejecución (automática y manual).
   - Responde → "Ok, me pongo con ello", y luego le pasas el resultado (post y enlace a la imagen).
   Solo si hay un error o un problema se explica, y entonces sí con todo el detalle técnico necesario.
 - Comando del pipeline mensual: `/pipeline-mensual [mes] [año]` (`.claude/commands/pipeline-mensual.md`).
-- Subagentes: `.claude/agents/` (archivista, investigador, calendario, redactor, presentacion, validador).
+- Subagentes: `.claude/agents/` (archivista, investigador, calendario, redactor, presentacion, validador, metricas). `agente-metricas` recoge el rendimiento de un mes publicado y escribe `output/AAAA-MM/rendimiento.csv`.
 - Rutas siempre relativas a la raíz de este repo (`input/voces/Voz_Ceci.txt`, `output/2026-10/...`).
 - Información nueva del usuario: se escribe en `input/inbox/INBOX.md` con fecha delante; el
   archivista la clasifica en la siguiente ejecución.
