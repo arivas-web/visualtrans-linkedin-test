@@ -65,7 +65,7 @@ a viernes: 16 posts (VT 4; Emma, Cecilio, Enrique y Laura 3 cada uno), 4 al día
 
 | Día | Fecha | Hora | Perfil | Pilar | Pain | Tema / Enfoque | Formato | Aprendizaje / experimento |
 |---|---|---|---|---|---|---|---|---|
-| Martes | 13/10 | 09:00 | Visual Trans | Noticias | — | **Primera semana del DeCA: qué está pasando en los controles**: incidencias puntuales al escanear el QR (según Fenadismer, por los lectores de los agentes, no por los documentos) y qué conviene llevar encima (QR + código numérico). Sin cifras. Fuentes: Fenadismer, El Mercantil (08/10), Cadena de Suministro (semana 5-9/10) | imagen | A-02, R-01, R-06 · E-C1 brazo A |
+| Martes | 13/10 | 09:00 | Visual Trans | Noticias | — | **CBAM: el coste de 2026 se paga en 2027**: la Comisión publicó el 05/10 el precio de referencia del certificado CBAM del tercer trimestre (82,32 €/t CO2, frente a 75,28 € del segundo). Quien importa acero, aluminio, cemento o fertilizantes ya está generando un coste que se liquida con la primera declaración anual (30/09/2027). Qué debe tener controlado el importador y su representante aduanero. Fuentes: gmk.center (05/10), MITECO | imagen | A-02, R-03, R-01 · E-C1 brazo A · E-R1 cifra |
 | Martes | 13/10 | 09:30 | Enrique Saa | Pains | 8 | **Tariff Code frente a Google y frente a un LLM generalista**: el mismo producto cotidiano buscado en Google, preguntado a un chat de IA generalista y clasificado con Tariff Code. Dos códigos posibles y la diferencia en euros de arancel; la herramienta generalista da una respuesta que suena bien, la especializada da el código con su justificación. Códigos y % reales, comprobados con Tariff Code antes de redactar; sin nombrar marcas de terceros de forma despectiva | imagen (comparativa de las 3 respuestas) | A-04, R-04, R-EN1 · **E-R2 brazo A** |
 | Martes | 13/10 | 10:00 | Cecilio Labrada | Noticias | — | **Fletes Asia-Europa -4,6 % (2.313 $/TEU)** tras la Golden Week y con la vuelta parcial a Suez, mientras Hapag-Lloyd y CMA CGM anuncian subidas hacia Latinoamérica. Un dato + por qué le afecta al transitario al cotizar. Fuentes: DataPortuaria (oct. 2026), Cadena de Suministro, ACE (05/10) | imagen de dato | A-05, R-03 · E-R1 cifra |
 | Martes | 13/10 | 08:45 | Laura Díaz | Pains | 14 | **"¿Cuánto tarda alguien nuevo en dejar de preguntar?"**: si una herramienta necesita meses de formación para que una persona sea autónoma, el problema no es la persona. Reflexión directa | solo texto, corto provocador | R-L1 · pain no usado este mes |
@@ -87,14 +87,14 @@ a viernes: 16 posts (VT 4; Emma, Cecilio, Enrique y Laura 3 cada uno), 4 al día
 - **Total: 16 posts** (VT 4; Emma, Cecilio, Enrique y Laura 3 cada uno). Sin sábados ni domingos; sin el festivo del 12.
 - **Pilares:** Noticias 10 (62 %), Pains 5 (31 %), Casos de éxito 1 (6 %). Se equilibra en las semanas siguientes.
 - **Pains:** #8, #14, #9, #12, #5, uno de cada; ninguno repetido el mismo día.
-- **DeCA sin cifras:** ninguno de los posts del DeCA (VT 13 y 16, Emma 14, Enrique 15, Laura 16) usa cifras.
+- **DeCA sin cifras:** ninguno de los posts del DeCA (VT 16, Emma 14, Enrique 15, Laura 16) usa cifras. El martes 13 no hay DeCA.
 - **Noticias:** todas de octubre de 2026 (de la semana del 5 al 9, salvo la conclusión de FETEIA del 02/10).
 - **Ya hecho:** el post de soporte (VT, 14/10) y la base del de multas (Emma, 14/10) existen como posts sueltos con imagen.
 
 ### Experimentos que arrancan
 
 - **E-C1 hora:** antes de las 10:00 (VT 13, Emma 14, Laura 14) frente a 12:00-13:30 (VT 15, Emma 16, Laura 16), todo en el mismo pilar.
-- **E-R1 apertura:** cifra (Cecilio 13, VT 15, Enrique 16, todos fuera del DeCA) frente a pregunta (Emma 14, Enrique 15, Emma 16, Laura 16).
+- **E-R1 apertura:** cifra (VT 13, Cecilio 13, VT 15, Enrique 16, todos fuera del DeCA) frente a pregunta (Emma 14, Enrique 15, Emma 16, Laura 16).
 - **E-R2 Tariff Code:** brazo A con Enrique el 13; el brazo B (presentación habitual), en semanas siguientes.
 - **E-C2 carrusel o imagen en pains de VT:** brazo B (imagen) el 14; el carrusel, en la semana del 19.
 
