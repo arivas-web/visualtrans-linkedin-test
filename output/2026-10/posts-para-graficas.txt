@@ -155,3 +155,31 @@ Por eso no se trata solo de tenerlo digital; se trata de poder demostrarlo exped
 ¿Tienes ya controlado el DeCA de cada expedición?
 
 
+
+=== SUELTO-2026-10-14-trazabilidad-del-envio ===
+FECHA: sin fecha
+PERFIL: Visual Trans
+PILAR: Pain
+FORMATO: imagen + texto corto
+TEXTO:
+¿Cuántas veces has llamado hoy a una naviera para saber dónde está un contenedor?
+
+Demasiadas. Es lo que se oye en el sector: "Para saber dónde está mi contenedor, paso un curro tremendo llamando a naviera y demás."
+
+Y la ETA cambia. Toca volver a buscarla, web por web.
+
+Luego hay que contarlo: "Trato de informar a mis clientes una vez a la semana, pero aun así me reclaman."
+
+Mientras, cualquiera sigue su paquete al minuto desde el móvil. El eCommerce ha elevado las expectativas, y el transitario sigue consultando y comunicando cada cambio a mano.
+
+No es solo una cuestión de tiempo; es una cuestión de confianza.
+
+Por eso en Visual Trans trabajamos la trazabilidad desde dentro:
+
+✅ Integración con navieras (Inttra) y puertos (Portic, Valenciaport)
+✅ Notificaciones automáticas
+✅ Servicio online para que el cliente consulte su container tracking
+
+Menos llamadas. Más tiempo para acompañar al cliente.
+
+¿Cuánto tiempo te lleva hoy saber dónde está un envío?
