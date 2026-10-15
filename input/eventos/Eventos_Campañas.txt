@@ -48,3 +48,43 @@ plantilla de cabecera al añadir la primera entrada real. -->
 - Estado: Confirmado
 - Fuente: INBOX
 - Notas: El día 5 de octubre de 2026 el DeCA será obligatorio (texto tal cual en la entrada de INBOX, sin más contexto ni desarrollo del acrónimo). Puede requerir ampliación por parte del agente-investigador.
+
+## Derecho de aduana fijo transitorio de 3 € para envíos de bajo valor
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/07/2026 - 01/07/2028
+- Relevancia: Comercio electrónico y aduanas de envíos de bajo valor (Reglamento (UE) 2026/382, publicado en el DOUE el 18/02/2026, que elimina la franquicia de 150 €) — perfil(es) a determinar por agente-calendario
+- Estado: Activo
+- Fuente: INBOX
+- Notas: Se suma al IVA; un proveedor indica que también aplica con IOSS. VERIFICAR la unidad de cobro: unas fuentes dicen por artículo y otras por línea arancelaria. El 01/10/2026 era la fecha límite para que la Comisión evaluase posibles desvíos de flujos comerciales (después, evaluación mensual).
+
+## EU Customs Data Hub (régimen definitivo envíos de bajo valor)
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/01/2028
+- Relevancia: Cierre del derecho fijo transitorio y paso al régimen definitivo para envíos de bajo valor — perfil(es) a determinar por agente-calendario
+- Estado: Tentativo
+- Fuente: INBOX
+- Notas: Fecha prevista, no confirmada.
+
+## ICS2 - presentación parcial de ENS por varios operadores
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 31/12/2026
+- Relevancia: Operativa de transitarios/filers con ICS2 — perfil(es) a determinar por agente-calendario
+- Estado: Tentativo
+- Fuente: INBOX
+- Notas: Antes de fin de 2026 ICS2 debería permitir que varios operadores presenten datos parciales de ENS sobre el mismo envío (naviera e importador por separado). Contexto en INBOX: ICS2 versión 3 obligatoria en todos los modos desde 03/02/2026 (la responsabilidad del filer a nivel house no es transferible); fin de periodos transitorios en carretera el 01/06/2026.
+
+## CBAM - periodo definitivo
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/01/2026 (inicio periodo definitivo); febrero 2027 (compra de certificados); 30/09/2027 (primera declaración anual, importaciones de 2026)
+- Relevancia: Importadores de mercancías del Anexo I y sus agentes/transitarios — perfil(es) a determinar por agente-calendario
+- Estado: Activo
+- Fuente: INBOX
+- Notas: Solo declarantes autorizados pueden importar mercancías del Anexo I (excepción provisional para quien solicitó la autorización antes del 31/03/2026). En España, MITECO gestiona el Registro CBAM y la AEAT controla en frontera. El coste de 2026 es retroactivo. Precio de referencia del certificado Q3 2026 publicado el 05/10/2026: 82,32 EUR/t CO2 (Q1: 75,36; Q2: 75,28).
+
+## Tacógrafo inteligente en furgonetas de 2,5 a 3,5 t
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/07/2026
+- Relevancia: Transporte por carretera — perfil(es) a determinar por agente-calendario
+- Estado: Activo
+- Fuente: INBOX
+- Notas: Obligatorio en transporte internacional y cabotaje (Reglamento (UE) 2020/1054). Exentas las furgonetas que operan solo dentro de España. La multa de 2.000 EUR citada por la prensa viene de una sola fuente: VERIFICAR con la DGT antes de usarla.
