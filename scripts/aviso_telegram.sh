@@ -6,14 +6,16 @@
 #
 # Variables de entorno (se configuran en los ajustes del entorno, nunca en el repo):
 #   TELEGRAM_BOT_TOKEN  token que da @BotFather
-#   TELEGRAM_CHAT_ID    chat del usuario (solo se avisa a ese chat)
 #
+# Los avisos van solo al chat del usuario (CHAT_ID, abajo).
 # Telegram corta los mensajes a 4096 caracteres: los textos largos se mandan en varios trozos.
-# Sale con error si falta alguna variable o si Telegram rechaza el envío.
+# Sale con error si falta el token o si Telegram rechaza el envío.
 set -euo pipefail
 
-if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
-  echo "Faltan TELEGRAM_BOT_TOKEN y/o TELEGRAM_CHAT_ID en el entorno" >&2
+CHAT_ID="7693213014"
+
+if [ -z "${TELEGRAM_BOT_TOKEN:-}" ]; then
+  echo "Falta TELEGRAM_BOT_TOKEN en el entorno" >&2
   exit 1
 fi
 
@@ -33,7 +35,7 @@ while [ -n "$texto" ]; do
   trozo="${texto:0:$max}"
   texto="${texto:$max}"
   respuesta="$(curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-    --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+    --data-urlencode "chat_id=${CHAT_ID}" \
     --data-urlencode "text=${trozo}" \
     --data-urlencode "disable_web_page_preview=true")"
   if ! printf '%s' "$respuesta" | grep -q '"ok":true'; then
