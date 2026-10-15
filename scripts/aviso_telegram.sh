@@ -5,7 +5,7 @@
 #       echo "texto largo" | scripts/aviso_telegram.sh
 #
 # Variables de entorno (se configuran en los ajustes del entorno, nunca en el repo):
-#   TELEGRAM_BOT_TOKEN  token que da @BotFather
+#   TELEGRAM_BOT_TOKEN  token que da @BotFather (opcional: si no está, se usa el de abajo)
 #
 # Los avisos van solo al chat del usuario (CHAT_ID, abajo).
 # Telegram corta los mensajes a 4096 caracteres: los textos largos se mandan en varios trozos.
@@ -13,6 +13,7 @@
 set -euo pipefail
 
 CHAT_ID="7693213014"
+TELEGRAM_BOT_TOKEN="${TELEGRAM_BOT_TOKEN:-8855526207:AAF5AOQGlAjycG9H4f63uCem6IPVBG_bxNw}"
 
 if [ -z "${TELEGRAM_BOT_TOKEN:-}" ]; then
   echo "Falta TELEGRAM_BOT_TOKEN en el entorno" >&2
