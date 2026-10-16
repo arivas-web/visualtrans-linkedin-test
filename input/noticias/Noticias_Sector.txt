@@ -100,3 +100,24 @@ Formato de cada entrada:
 - Registrada el: 2026-10-07
 
 ---
+
+## Factura electrónica B2B: Orden HAC/1028/2026 publicada en el BOE (en vigor el 6 de octubre) — corrige la entrada anterior
+- Fecha de la noticia: 2026-10-05 (BOE núm. 247, BOE-A-2026-20587; en vigor el 2026-10-06; nota de la AEAT del 2026-10-07)
+- Fuente: BOE https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20587.pdf ; AEAT https://sede.agenciatributaria.gob.es/Sede/en_gb/todas-noticias/2026/octubre/7/solucion-publica-facturacion-electronica.html
+- Resumen: La orden regula la solución pública de facturación electrónica y arranca la cuenta atrás: obligación desde 2027-10-06 para empresas con más de 8 M€ de volumen de operaciones y desde 2028-10-06 para el resto (2029-10-06 para personas físicas, en la comunicación de estado de facturas y pagos). Quien use soluciones privadas deberá enviar copia fiel de cada factura a la solución pública, y el destinatario comunicar el pago o rechazo. Sustituye a la entrada anterior, que hablaba de vigencia prevista el 2026-10-01 y fechas sin confirmar.
+- Relevancia: MEDIA-ALTA. Calendario ya confirmado en fuente oficial; ángulo "tienes 12-24 meses, empieza a preparar facturación y pagos de la operativa". Toca pains #7 y #3.
+- Registrada el: 2026-10-16
+
+## Logistics & Automation Madrid 2026: 11-12 de noviembre en IFEMA
+- Fecha de la noticia: no aplica (evento anunciado; fechas según listados de ferias, sin contrastar con el organizador)
+- Fuente: listados de ferias (exposale.net, interempresas.net/Transporte/Ferias/); confirmar en la web del organizador
+- Resumen: Feria de automatización, transporte, almacenamiento e intralogística del 2026-11-11 al 2026-11-12 en IFEMA Madrid.
+- Relevancia: BAJA-MEDIA. Posible gancho de calendario para noviembre (digitalización y automatización documental). Confianza media-baja hasta confirmar fechas.
+- Registrada el: 2026-10-16
+
+## Informes sobre IA agéntica y automatización en logística (Infobae, 10 de octubre)
+- Fecha de la noticia: 2026-10-10 (según la URL del artículo; contenido visto solo en el extracto de la búsqueda)
+- Fuente: Infobae (https://www.infobae.com/movant/2026/10/10/la-inteligencia-artificial-acelera-una-nueva-etapa-de-automatizacion-en-la-logistica-global/)
+- Resumen: Un informe de un operador logístico global habla de IA agéntica y automatización; según el extracto, el 54% de las organizaciones de logística automatiza tareas de bajo valor. Cifra y autoría sin verificar en el artículo completo.
+- Relevancia: BAJA-MEDIA. Apoya el ángulo "IA para quitar tareas documentales de bajo valor" (aduanas, clasificación arancelaria). No citar la cifra sin ver el informe.
+- Registrada el: 2026-10-16
