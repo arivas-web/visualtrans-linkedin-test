@@ -1,0 +1,5 @@
+# Calendario — post suelto
+
+| Perfil | Fecha | Pilar | Pain # | Tema/Enfoque | Formato sugerido |
+|---|---|---|---|---|---|
+| Emma González | — | Noticia | 3 | Infobae (10-oct-2026) se hace eco de informes sobre IA agéntica y automatización de tareas de bajo valor en la logística global. Fuente: https://www.infobae.com/movant/2026/10/10/la-inteligencia-artificial-acelera-una-nueva-etapa-de-automatizacion-en-la-logistica-global/ . NO usar ninguna cifra (el 54 % del extracto no está verificado). Ángulo: que el equipo deje de teclear documentos y datos y dedique el tiempo a lo que aporta (pain 3: introducción de datos, volcado de ficheros, recopilación de documentación). Voz cercana de Emma, sin venta directa ni promesas sobre IA de Visual Trans que no estén en Contexto_Visual_Trans.txt. Enlace a la noticia en el primer comentario, cierre con "enlace en el primer comentario 👇" (aprendizaje R-01). Longitud objetivo 500-800 caracteres si la voz lo permite (R-02). | Texto + enlace en comentario |
