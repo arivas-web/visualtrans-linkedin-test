@@ -11,7 +11,7 @@ Teclear no es trabajar.
 
 Infobae cuenta cómo la IA agéntica empieza a asumir en la logística global las tareas de bajo valor: introducir datos, pasar ficheros de un sistema a otro, recopilar documentación.
 
-Las conozco bien. En el día a día de un transitario son las que se comen la mañana. Y lo peor de todo es que nadie las echaría de menos.
+En Visual Trans las conocemos bien porque trabajamos para que desaparezcan de la operativa de nuestros clientes. En el día a día de un transitario son las que se comen la mañana. Y lo peor de todo es que nadie las echaría de menos.
 
 No se trata solo de ir más rápido; se trata de en qué dedica el equipo su tiempo: atender al cliente, cotizar mejor, anticiparse a un problema.
 
