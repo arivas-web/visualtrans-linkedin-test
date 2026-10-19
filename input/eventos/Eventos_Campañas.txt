@@ -40,6 +40,7 @@ plantilla de cabecera al añadir la primera entrada real. -->
 - Estado: Confirmado (evento del sector; la entrada de INBOX no especifica participación directa de Visual Trans)
 - Fuente: INBOX
 - Notas: Se celebra en Tenerife, organizado por FETEIA-OLTRA. Temas previstos: novedades en materia aduanera, aplicación práctica de nuevas regulaciones, impacto de la futura Ley de Movilidad Sostenible, relevo generacional y transformación del sector. Reúne a expertos, representantes de la Administración y empresas de la cadena logística, con sesiones técnicas, estratégicas y espacios de networking.
+- Ampliación INBOX (2026-10-19): sesión técnica sobre novedades aduaneras en la que participó la Agencia Tributaria. Fuente: https://elmercantil.com/2026/06/04/los-transitarios-centran-su-congreso-en-el-estado-la-logistica-las-aduanas-y-la-vision-de-los-jovenes/
 
 ## DeCA obligatorio
 - Tipo: Cambio normativo con fecha
@@ -48,3 +49,92 @@ plantilla de cabecera al añadir la primera entrada real. -->
 - Estado: Confirmado
 - Fuente: INBOX
 - Notas: El día 5 de octubre de 2026 el DeCA será obligatorio (texto tal cual en la entrada de INBOX, sin más contexto ni desarrollo del acrónimo). Puede requerir ampliación por parte del agente-investigador.
+- Ampliación INBOX (2026-10-19): La Ley 9/2025 de Movilidad Sostenible se publicó en el BOE el 04/12/2025; su disposición transitoria octava hace "necesariamente digital" el documento de control administrativo (DeCA) del transporte público de mercancías por carretera a partir del 05/10/2026 (Orden FOM/2861/2012). Desde el 05/10/2026 el DeCA es digital; solo afecta al transporte interior (nacional y cabotaje); los internacionales siguen con los documentos de los convenios. Fuentes: https://www.muycanal.com/2026/03/06/carta-porte-digital-ecmr y https://www.apr.es/
+
+## AEAT - Cambios comercio electrónico (noviembre 2026)
+- Tipo: Cambio normativo con fecha
+- Fecha(s): noviembre de 2026 (día exacto no indicado); seminario web AEAT el 01/10/2026
+- Relevancia: Perfiles de aduanas/comercio electrónico — perfil(es) a determinar por agente-calendario
+- Estado: Tentativo
+- Fuente: INBOX
+- Notas: Cambios que entran en vigor en noviembre: tasa de tramitación por envío e identificadores de producto, y nueva versión de la guía de declaraciones de escaso valor (H7) hasta 150 €. VERIFICAR la tasa de tramitación: solo la menciona una fuente. Fuente original: https://sede.agenciatributaria.gob.es/Sede/aduanas/novedades.html
+
+## Reglamento (UE) 2026/382 - Fin de la franquicia de 150 € y derecho fijo de 3 €
+- Tipo: Cambio normativo con fecha
+- Fecha(s): publicación en DOUE 18/02/2026; derecho fijo transitorio de 3 € desde 01/07/2026 hasta 01/07/2028
+- Relevancia: Perfiles de aduanas/comercio electrónico — perfil(es) a determinar por agente-calendario
+- Estado: Activo
+- Fuente: INBOX
+- Notas: Elimina la franquicia de derechos de aduana para envíos de hasta 150 € de valor intrínseco. Derecho de aduana fijo transitorio de 3 € para envíos de bajo valor. VERIFICAR la unidad de cobro (por artículo o por línea arancelaria). Se suma al IVA y, según un proveedor, también aplica con IOSS. Fuentes: https://www.camarazamora.com/reglamento-ue-2026-382-que-cambia-en-los-envios-de-menos-de-150-e-aduanas-ue y https://www.e-consulting.org/comunicacion/sala-de-prensa/la-union-europea-suprime-la-franquicia-aduanera-de-150-euros-y-establece-un-derecho-fijo-transitorio-hasta-2028
+
+## Evaluación de la Comisión sobre desvíos de flujos comerciales (franquicia 150 €)
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/10/2026
+- Relevancia: Perfiles de aduanas/comercio electrónico — perfil(es) a determinar por agente-calendario
+- Estado: Pasado
+- Fuente: INBOX
+- Notas: Fecha límite para que la Comisión evalúe posibles desvíos de flujos comerciales tras eliminar la franquicia de 150 € (después, evaluación mensual). Fuente: https://www.camarazamora.com/reglamento-ue-2026-382-que-cambia-en-los-envios-de-menos-de-150-e-aduanas-ue
+
+## EU Customs Data Hub
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/01/2028 (fecha prevista)
+- Relevancia: Perfiles de aduanas — perfil(es) a determinar por agente-calendario
+- Estado: Tentativo
+- Fuente: INBOX
+- Notas: Daría paso al régimen definitivo para los envíos de bajo valor. Fuente: https://www.e-consulting.org/comunicacion/sala-de-prensa/la-union-europea-suprime-la-franquicia-aduanera-de-150-euros-y-establece-un-derecho-fijo-transitorio-hasta-2028
+
+## Nuevo Código Aduanero de la Unión (publicación)
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 19/09/2026 (publicación según varias fuentes); calendario de aplicación hasta 2031
+- Relevancia: Perfiles de aduanas — perfil(es) a determinar por agente-calendario
+- Estado: Tentativo
+- Fuente: INBOX
+- Notas: Ventanilla única que refunde sistemas nacionales y Autoridad Aduanera con sede en Lille; 12 meses para aplicar las reglas. VERIFICAR en EUR-Lex. Fuente: https://www.diariodelpuerto.com/logistica/entra-en-vigor-la-reforma-aduanera-de-la-union-europea-OH26656282
+
+## ICS2 versión 3 obligatoria
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 03/02/2026
+- Relevancia: Perfiles de aduanas/transitarios — perfil(es) a determinar por agente-calendario
+- Estado: Activo
+- Fuente: INBOX
+- Notas: Obligatoria en todos los modos de transporte, con presentación múltiple de ENS. La responsabilidad del filer a nivel house no es transferible. Actualización de "stop words" (04/05/2026): una palabra de la lista usada sola en la descripción de la mercancía provoca el rechazo de la declaración (p. ej. "general goods"). Fuentes: https://www.icustoms.ai/blogs/ics2-release-3-guide-for-freight-forwarders/ y https://gofreight.com/blog/freight-forwarder-compliance-calendar
+
+## ICS2 - Fin de periodos transitorios en carretera
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/06/2026
+- Relevancia: Perfiles de transporte por carretera/aduanas — perfil(es) a determinar por agente-calendario
+- Estado: Activo
+- Fuente: INBOX
+- Notas: Fin de los periodos transitorios (Polonia, Croacia, Letonia, Rumanía y Eslovaquia). La Comisión indica que desde esta fecha toda consignación que entre en la UE debe tener ENS válido. Algunas fuentes mencionan derogaciones nacionales: VERIFICAR país por país. Fuente: https://eurodebt.eu/en/ICS2-for-road-transport-June-2026-ends-the-era-of-the-old-customs-system-in-the-EU/
+
+## ICS2 - Datos parciales de ENS por varios operadores
+- Tipo: Cambio normativo con fecha
+- Fecha(s): antes del 31/12/2026
+- Relevancia: Perfiles de aduanas/transitarios — perfil(es) a determinar por agente-calendario
+- Estado: Tentativo
+- Fuente: INBOX
+- Notas: ICS2 debería permitir que varios operadores presenten datos parciales de ENS sobre el mismo envío (naviera e importador por separado). Fuente: https://www.icustoms.ai/blogs/ics2-release-3-guide-for-freight-forwarders/
+
+## CBAM - Periodo definitivo
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/01/2026 (inicio del periodo definitivo); 30/09/2027 (vence la primera declaración anual, importaciones de 2026)
+- Relevancia: Perfiles de importación/aduanas — perfil(es) a determinar por agente-calendario
+- Estado: Activo
+- Fuente: INBOX
+- Notas: Solo los declarantes autorizados pueden importar mercancías del Anexo I. Excepción provisional para quien solicitó la autorización antes del 31/03/2026. En España, MITECO gestiona el Registro CBAM y la AEAT controla en frontera. Los certificados se compran desde febrero de 2027, así que el coste de 2026 es retroactivo. Fuentes: https://www.miteco.gob.es/es/cambio-climatico/temas/cbam/actores-cbam.html y https://www.miteco.gob.es/es/cambio-climatico/temas/cbam/periodo-definitivo/declaracion-cbam.html
+
+## Tacógrafo inteligente en furgonetas de 2,5 a 3,5 t
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 01/07/2026
+- Relevancia: Perfiles de transporte por carretera — perfil(es) a determinar por agente-calendario
+- Estado: Activo
+- Fuente: INBOX
+- Notas: Obligatorio en transporte internacional y cabotaje (Reglamento (UE) 2020/1054). Exentas las furgonetas que operan solo dentro de España. La multa de 2.000 € que cita la prensa viene de una sola fuente: VERIFICAR con la DGT. Fuente: https://www.espaciofurgo.com/2026-el-ano-en-que-las-furgonetas-entraran-en-la-era-del-tacografo/
+
+## Aranceles EE. UU. del 10 % a importaciones de la UE
+- Tipo: Cambio normativo con fecha
+- Fecha(s): 24/07/2026
+- Relevancia: Perfiles de comercio exterior — perfil(es) a determinar por agente-calendario
+- Estado: Tentativo
+- Fuente: INBOX
+- Notas: Entran en vigor aranceles del 10 % (investigación sobre trabajo forzoso, Sección 301), que sustituyen al arancel global temporal del mismo porcentaje. Afecta a agroalimentación, maquinaria y moda. Situación posterior a julio sin confirmar. Fuente: https://www.que.es/2026/07/24/aranceles-trump-ue-2026/
