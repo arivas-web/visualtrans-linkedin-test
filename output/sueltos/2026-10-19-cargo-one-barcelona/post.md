@@ -7,7 +7,7 @@ TEMA: Sesión de cargo.one en Barcelona sobre inteligencia organizativa e IA en 
 FORMATO: imagen + texto corto
 ---
 
-Anoche en Barcelona, hablando de IA con transitarios.
+Una tarde en Barcelona, hablando de IA con transitarios.
 
 Los #Cargonauts de cargo.one reunieron a profesionales del forwarding para ver cómo capturar la inteligencia organizativa en los flujos de trabajo con IA. No es solo ganar eficiencia; es dar más recorrido a los equipos.
 
