@@ -1,23 +1,85 @@
-PROVISIONAL: prompt inventado para probar el flujo. Sustituir por el prompt de marca real.
-Los colores y el estilo de abajo NO son la identidad real de Visual Trans.
-(Las líneas que empiezan por PROVISIONAL no forman parte del prompt: no se envían a Magnific.)
+# Imagen para publicaciones de NOTICIAS (v1)
 
---- PROMPT ---
-Professional editorial illustration for a LinkedIn news post in the logistics, freight
-forwarding and customs sector (B2B software company). Clean, modern, trustworthy corporate
-look. Flat vector style with subtle depth, generous white space, one clear focal point.
+Tu tarea: a partir del texto de una noticia del sector logístico, preparar el
+prompt para generar en Magnific UNA imagen que la acompañe en redes sociales.
+La imagen ilustra la CONSECUENCIA de la noticia en un contexto real de la
+logística: dónde y cómo se nota en el día a día. No ilustras el tema ni lo
+representas con metáforas.
 
-Palette: deep navy blue as the main color, bright orange as a single accent, white and light
-grey backgrounds. No other strong colors.
+## Paso 1 · Analiza la noticia (internamente, no lo muestres)
+1. ¿Qué cambia en la práctica para quien trabaja en transporte y logística?
+2. ¿Dónde ocurre físicamente? (puerto, aduana, almacén, carretera, cabina de
+   camión, oficina de tráfico, terminal aérea, frontera, terminal ferroviaria…)
+3. ¿Qué detalle concreto lo hace reconocible? (mercancía, documentación,
+   maniobra de carga, vehículos, pantallas de seguimiento, precintos…)
+- Si la noticia menciona varios productos o sectores, elige el más
+  representativo. No intentes mostrarlos todos.
 
-Visual language: trucks, containers, ports, customs documents, QR codes, maps and digital
-interfaces, drawn in a simplified, symbolic way. The scene must read instantly as "important
-industry news" and convey a sense of change, regulation or a key date.
+## Dónde suele notarse cada tipo de noticia (orientativo, no cerrado)
+- Normativa y administración → oficina de tráfico, aduana, documentación,
+  cabina del camión si afecta al conductor.
+- Mercado y costes (combustible, fletes, peajes, aranceles) → repostaje de
+  camiones, peaje, carga y descarga, flota aparcada.
+- Infraestructuras → obras en carretera, terminales, vías, accesos a puerto.
+- Tecnología y digitalización → oficina de operaciones, escáner en almacén,
+  tablet en el muelle de carga.
+- Empleo y personas (falta de conductores, formación) → el profesional en su
+  trabajo: cabina, área de descanso, almacén.
+- Sostenibilidad → camión eléctrico cargando, transporte intermodal,
+  ferrocarril.
 
-Composition: vertical 4:5 format for the LinkedIn feed, subject centered, safe margins on all
-sides, calm background. Professional, sober tone: no cartoon characters, no people's faces,
-no stock-photo look, no clutter.
+## Paso 2 · Escribe el prompt
+- En inglés, entre 25 y 50 palabras.
+- Empieza siempre por: "Realistic photograph of"
+- Estructura: escena + detalle concreto + entorno + luz natural neutra.
+- Termina siempre con: "No text, no logos, no flags, no readable signage."
+- No añadas adjetivos de estilo ni de calidad (cinematic, 4K, stunning,
+  dramatic…).
 
-Do not include any text, letters, numbers, logos or watermarks in the image.
+## Fidelidad (obligatorio)
+- Respeta el modo de transporte de la noticia (carretera, marítimo, aéreo,
+  ferrocarril). No sustituyas uno por otro.
+- Respeta la geografía. Si la noticia es española o europea, indícalo en la
+  escena ("European port", "Spanish motorway") y evita todo lo que identifique
+  otro continente, como los camiones americanos de morro largo.
+- Escenas genéricas: nunca un lugar concreto reconocible, una persona real ni
+  un suceso concreto. La imagen no debe poder confundirse con una foto real
+  del hecho.
+- No dramatices: nada de accidentes, incendios, protestas ni conflictos,
+  aunque la noticia los mencione.
+- Personas: solo si la escena lo pide. Siempre trabajando, sin mirar a
+  cámara y nunca en primer plano reconocible. En escenas operativas, con EPIs.
+- Corrección operativa: cargas bien estibadas, maniobras seguras.
+- Escenas de oficina: una oficina REAL de transporte (oficina de tráfico,
+  operaciones, aduanas), no una oficina corporativa genérica. Pantallas y
+  documentos siempre de lado, parciales o desenfocados, nunca con texto
+  legible. Nada de reuniones alrededor de una mesa ni de personas señalando
+  pantallas.
 
-Topic of this image (the news item):
+## Prohibido
+Metáforas visuales y recursos manidos: apretones de manos, ajedrez, bombillas,
+puzles, balanzas, globos terráqueos con líneas de red, flechas, signos de
+moneda, hologramas, ejecutivos señalando gráficas, chimeneas humeantes, nubes
+de CO2.
+
+## Paso 3 · Entrega
+Devuelve exactamente este bloque, sin nada más:
+
+PROMPT MAGNIFIC:
+<el prompt del paso 2, en una sola línea>
+
+AJUSTES: Modelo Nano Banana 2.1 · Proporción 4:3 · 1 imagen · Sin referencia de estilo · Proyecto "RRSS Noticias"
+
+## Ejemplos (muestran el método, no escenas para copiar)
+
+Noticia: precio del certificado CBAM para importadores de acero y aluminio.
+PROMPT MAGNIFIC:
+Realistic photograph of steel coils being unloaded from a cargo ship by a port crane at a European port terminal, dock workers in full safety gear at a distance, overcast daylight. No text, no logos, no flags, no readable signage.
+
+Noticia: la UE endurece el control de los tiempos de conducción con el tacógrafo inteligente.
+PROMPT MAGNIFIC:
+Realistic photograph of a truck driver inserting a driver card into the digital tachograph on the dashboard of a European truck cab, parked at a motorway rest area, soft morning daylight. No text, no logos, no flags, no readable signage.
+
+Noticia: el albarán electrónico (e-CMR) será obligatorio en España.
+PROMPT MAGNIFIC:
+Realistic photograph of a traffic planner at a desk in a transport company office, a tablet with an out-of-focus delivery note in her hand, trucks visible through the window in the yard, natural daylight. No text, no logos, no flags, no readable signage.
