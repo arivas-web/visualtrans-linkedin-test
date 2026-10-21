@@ -121,3 +121,19 @@ Formato de cada entrada:
 - Resumen: Un informe de un operador logístico global habla de IA agéntica y automatización; según el extracto, el 54% de las organizaciones de logística automatiza tareas de bajo valor. Cifra y autoría sin verificar en el artículo completo.
 - Relevancia: BAJA-MEDIA. Apoya el ángulo "IA para quitar tareas documentales de bajo valor" (aduanas, clasificación arancelaria). No citar la cifra sin ver el informe.
 - Registrada el: 2026-10-16
+
+---
+
+## AEAT: nueva versión de la información complementaria de la guía de importación (H1) con pruebas de la tasa de la Unión y PID desde el 1 de noviembre
+- Fecha de la noticia: 2026-10-14
+- Fuente: Agencia Tributaria, Novedades de Aduanas (https://sede.agenciatributaria.gob.es/Sede/aduanas/novedades/2026/octubre/14/nueva-version-informacion-complementaria-guia-importacion.html)
+- Resumen: La AEAT actualiza la información complementaria de la guía H1. Las novedades de comercio electrónico se aplican desde el 1 de noviembre de 2026: se habilita el sistema de pruebas para las partidas 9603409000, 9612101010 y 4820200000, donde se prueban a la vez la medida de arancel con identificadores de producto y la tasa de la Unión (referencia adicional Y126), que ya cuenta como base imponible del IVA. También se actualizan la separata 13 (vinculación DDA/CAE, fábrica-depósito fiscal, depósito REF/ILT) y la separata 30 (códigos del mensaje CC415R y claves de bandeja, por la entrada en servicio de CCI).
+- Relevancia: ALTA para agentes de aduanas y transitarios con importación. Obliga a actualizar el software con 2 semanas de margen. Toca pains #7 (cambios legales a tiempo), #6 (proveedor lento en actualizaciones) y #8 (herramientas no integradas). Complementa las entradas H7 y tasa/PID ya registradas.
+- Registrada el: 2026-10-21
+
+## AEAT: guía H7 versión 3.23 (la tasa de la Unión pasa a la base imponible del IVA)
+- Fecha de la noticia: 2026-10-16
+- Fuente: Agencia Tributaria, Novedades de Aduanas (https://sede.agenciatributaria.gob.es/Sede/aduanas/novedades/2026/octubre/16/nueva-version-informacion-complementaria-guia-valor.html)
+- Resumen: Nueva versión 3.23 de la guía de declaración de escaso valor (H7). La tasa de la Unión (F00) pasa a formar parte de la base imponible del IVA (B00) y se corrige la v3.22, que no permitía declarar la referencia de referencias adicionales aunque es obligatoria. Ambos cambios ya están en el sistema de pruebas (en pruebas desde el 1 de octubre). La página no indica fecha de entrada en producción.
+- Relevancia: MEDIA-ALTA. Novedad real sobre la H7 ya registrada: cambia el cálculo del IVA en envíos de escaso valor. Toca pains #7 y #6. No citar fecha de producción hasta verla en fuente oficial.
+- Registrada el: 2026-10-21
