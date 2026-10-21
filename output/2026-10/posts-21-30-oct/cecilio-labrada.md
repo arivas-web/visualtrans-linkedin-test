@@ -7,7 +7,7 @@ TEMA: El flete baja, tu oferta no: tarifas actualizadas a mano llegan tarde a la
 FORMATO: infografía
 ---
 
-[CIFRA FLETE] por contenedor de 40 pies. Es el último World Container Index de Drewry.
+4.351 $ por contenedor de 40 pies. Es el World Container Index de Drewry del 8 de octubre.
 
 El flete se mueve. Tu oferta, no.
 
@@ -92,7 +92,7 @@ La cotización es el primer momento para recoger esa información, no el último
 
 ## Notas de redacción para el log
 
-- Marcadores pendientes: [CIFRA FLETE] (21/10, WCI Drewry vigente, no consta en las fuentes; el 4.351 $/FEU del 08/10 es anterior y no se reutiliza) y [IMPORTE TASA] (23/10).
+- Marcadores pendientes: [IMPORTE TASA] (23/10).
 - Tasa de 3 EUR (23/10): el calendario dice "3 EUR por paquete", pero Noticias_Sector.txt habla de 2 EUR por envío desde 01/11 y de 3 EUR por tipo de artículo desde 01/07, sin contrastar. Se dejó el marcador en lugar del importe y se habla de fecha "prevista". Confirmar en AEAT/BOE antes de publicar y ajustar el texto.
 - 27/10: no hay cifra de coste verificada para el pain #11. Se abrió con la rebaja del Impuesto sobre Hidrocarburos (20/13/6 cts/litro, RDL 25/2026), que en Noticias_Sector.txt consta "según extracto, no verificado en BOE". Verificar antes de publicar. Fuente para el primer comentario: Trans.info (enlace en esa entrada).
 - 30/10: datos ICS2 tomados del briefing (confianza media-alta). Fuente para el primer comentario: trans.info (enlace en el briefing). Cierra con pregunta, sin enlace pegado; si se prefiere la llamada 👇 (R-01), cambiar el cierre.
