@@ -439,3 +439,87 @@ No es falta de compromiso. Es falta de visibilidad.
 Desde que lo apunto en un sitio donde se ve, me olvido menos y llego a tiempo.
 
 ¿Qué se te está quedando parado ahora mismo en tu día a día sin que lo veas? 👇
+
+=== EMMA-2026-10-22-emma-tariff-pulsera ===
+FECHA: 2026-10-22
+PERFIL: Emma González
+PILAR: Pain
+FORMATO: imagen
+INSTRUCCIONES_IMAGEN: Sin logo.
+TEXTO:
+9102120000 vs. 8517620000. 4.500 € de diferencia en una pulsera de actividad.
+
+Sí, la que llevas en la muñeca. Mismo producto, dos clasificaciones posibles según cómo se describa su función: reloj electrónico o aparato de transmisión de datos.
+
+Una lleva un 4,5 % de arancel. La otra, un 0 %. Sobre una partida de 100.000 €, eso son 4.500 €.
+
+Y lo peor de todo es que no se nota hasta que llega la liquidación.
+
+→ El código correcto
+→ El porqué de ese código
+
+Con Tariff Code lo ves en pocos segundos, antes de despachar.
+
+¿Cuál es el producto más raro que te ha tocado clasificar?
+
+=== EMMA-2026-10-26-emma-codigo-aduanero ===
+FECHA: 2026-10-26
+PERFIL: Emma González
+PILAR: Noticia
+FORMATO: imagen
+INSTRUCCIONES_IMAGEN: Sin logo.
+TEXTO:
+Doce meses de adaptación. Eso es lo que da el nuevo Código Aduanero de la UE.
+
+El Reglamento (UE) 2026/2108 se publicó en el Diario Oficial el 19 de septiembre y sustituye al Reglamento 952/2013. Crea la Autoridad Aduanera de la UE, con sede en Lille, y un centro de datos común.
+
+Para el agente de aduanas, esto va más allá de la norma. Se trata de tener los datos ordenados para cuando toque compartirlos.
+
+1️⃣ Qué datos tecleas hoy más de una vez
+2️⃣ Qué parte de tu operativa depende de la memoria de alguien
+3️⃣ Qué calendario maneja tu proveedor de software
+
+Doce meses parecen muchos. No lo son.
+
+¿Por cuál de las tres empezarías tú? Fuente en el primer comentario 👇
+
+=== EMMA-2026-10-28-emma-dato-tres-sitios ===
+FECHA: 2026-10-28
+PERFIL: Emma González
+PILAR: Pain
+FORMATO: imagen
+INSTRUCCIONES_IMAGEN: No mostrar porcentajes ni cifras de tiempo; ilustrar solo el mismo dato (NIF, mercancía, importe) copiado en tres sitios. Sin logo.
+TEXTO:
+Un dato. Tres sitios distintos.
+
+El mismo NIF, la misma mercancía, el mismo importe: en la cotización, en el expediente y en la factura. Cada uno en su sistema, cada uno a mano.
+
+Según lo que he visto en el día a día, copiar así se lleva aproximadamente la mitad del tiempo de cada expediente [ESTIMACIÓN ~50 %: CORREGIR CON DATO REAL].
+
+Eso no es solo tiempo. Es el caldo de cultivo perfecto para el error.
+
+Una errata en el segundo sitio y el tercero ya sale mal.
+
+¿Cuántas veces has tecleado hoy el mismo dato?
+
+=== EMMA-2026-10-29-emma-tariff-frutos-secos ===
+FECHA: 2026-10-29
+PERFIL: Emma González
+PILAR: Pain
+FORMATO: imagen
+INSTRUCCIONES_IMAGEN: Sin logo.
+TEXTO:
+0802908500 o 2008199900. Unos frutos secos, 3.800 € de diferencia.
+
+Parece una curiosidad. En la aduana es una decisión.
+
+¿Son frutos secos al natural o frutos secos preparados? Según cómo se presenten, cambia el código y cambia el arancel.
+
+En un contenedor estándar, la diferencia es de 3.800 €.
+
+La diferencia entre un código y otro se nota desde el primer despacho.
+
+→ El código correcto
+→ El porqué de ese código
+
+¿Te ha pasado alguna vez con un producto de este tipo?
