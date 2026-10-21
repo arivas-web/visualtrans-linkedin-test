@@ -4,7 +4,7 @@ Laura es SDR de un proveedor (Visual Trans): habla con mucha gente. No es operat
 Regla añadida: su día a día no es el de un transitario; reconocerlo y devolver la pregunta al lector (sin simular que vive su operativa).
 
 ---
-FECHA: miércoles 21/10 10:00
+FECHA: lunes 26/10 10:30
 TEMA: IA para quitar tareas documentales de bajo valor
 FORMATO: solo texto
 ---
