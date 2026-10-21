@@ -1,6 +1,6 @@
-# PRUEBA — Laura Díaz, voz 100% humana (21-30 oct)
+# PRUEBA — Laura Díaz, voz 100% humana (21-30 oct) — v2 con feedback de Laura
 
-Experimento: no se toca Voz_Laura.txt. Estos 4 posts siguen los temas del calendario v2 pero con voz más personal, imperfecta e irregular, menos corporativa. Sin hashtags, sin cifras. Las frases en primera persona son orientativas: Laura debe confirmar o cambiarlas por lo que de verdad le pasa antes de publicar.
+Laura es SDR de un proveedor (Visual Trans): llama, prospecta y hace seguimiento. No es operativa de tráfico ni de aduanas ni jefa de equipo. Las metáforas salen de su propio trabajo. Sin hashtags, sin cifras. Las frases en primera persona son orientativas: Laura debe confirmarlas antes de publicar.
 
 ---
 FECHA: miércoles 21/10 10:00
@@ -10,35 +10,33 @@ FORMATO: solo texto
 
 Confieso una cosa.
 
-Hay tareas en esta oficina que odio con todas mis ganas. Copiar un dato de un PDF a una pantalla. Y luego el mismo dato a otra. Y luego comprobar que lo he copiado bien. Eso no es trabajo, es castigo.
+Hay partes de mi trabajo que no son hablar con nadie. Buscar el cargo de una persona en tres sitios. Copiar el teléfono al CRM. Escribir el mismo correo de seguimiento con un nombre distinto.
 
-Y lo peor es que lo hacemos bien. Tan bien que nadie se queja.
+Eso no es vender. Es picar datos.
 
-Aquí le pido a la IA lo aburrido. Lo de pensar, lo de llamar al cliente y decirle "oye, esto no cuadra", eso me lo quedo yo.
+Ahora le dejo a la IA lo aburrido. Lo de descolgar el teléfono y entender qué le quita el sueño al otro lado, eso me lo quedo yo.
 
-No sé si es la mejor forma de usarla. Pero esta semana he vuelto a casa con la cabeza menos frita, y eso ya cuenta.
+No sé si es la mejor forma de usarla. Pero esta semana he llegado a las llamadas con la cabeza más despejada, y eso ya cuenta.
 
 ¿Qué es lo primero que le quitarías tú a tu semana?
 
 ---
 FECHA: viernes 23/10 10:00
-TEMA: Pain #20, control y visibilidad del equipo
+TEMA: Pain #20, control y visibilidad
 FORMATO: solo texto
 ---
 
-¿Sabes qué hizo tu equipo ayer? De verdad.
+Un lead se me enfrió sin que nadie lo notara.
 
-No lo que te contaron. Lo que pasó.
+Hablé con él, quedamos en retomarlo y la nota se quedó en un cuaderno. Tres semanas después, nada. Ni mala fe ni falta de ganas. Simplemente no había un sitio donde se viera.
 
-A mí me ha tocado enterarme por casualidad de que algo llevaba tres días parado. Tres. Y nadie lo había dicho porque todos pensaban que ya lo sabía otro.
+Y pasa en cualquier trabajo. Lo importante se queda parado porque nadie lo ve parado.
 
-No era mala fe. Era que no había dónde mirarlo.
+No es falta de compromiso. Es falta de visibilidad.
 
-Y ahí se te va el día, apagando fuegos que se podrían haber visto venir. Preguntando "¿cómo va lo de…?" y notando que molestas.
+Desde que lo apunto todo donde se ve, me enfrío menos y llego a tiempo.
 
-No es desconfiar. Es poder ayudar a tiempo.
-
-¿Cuándo fue la última vez que te enteraste tarde de algo importante? 👇
+¿Qué se te está quedando parado ahora mismo sin que lo veas? 👇
 
 ---
 FECHA: martes 27/10 10:00
@@ -46,15 +44,15 @@ TEMA: Aranceles cambiantes, no se pueden llevar de memoria
 FORMATO: solo texto
 ---
 
-Me volví loca buscando un código arancelario que juraría haberme sabido.
+Cada semana hablo con gente que se sabe los aranceles de memoria.
 
-Lo tenía clarísimo. Lo había usado mil veces. Y resulta que ya no era ese.
+Y lo respeto. Pero yo veo el otro lado: la memoria es de las cosas que más nos fallan sin avisar.
 
-Un arancel no se memoriza. Cambia, se actualiza, se corrige. Quien dice que lo lleva de cabeza, o miente o tiene suerte, que algún día se le acaba.
+A mí me pasa con mi propio trabajo. Juraría que sé en qué punto está cada conversación con un cliente. Hasta que miro mis notas y resulta que no era así.
 
-Me pasó y me dio rabia. Rabia conmigo, por fiarme. Y rabia con todo esto, por pensar que se puede ir tirando de memoria.
+Si me falla con lo mío, que cambia poco, imagina con algo que se actualiza cada año.
 
-Ahora lo miro siempre. Aunque lo sepa. Sobre todo si lo sé.
+No es tener mala memoria. Es que hay cosas que no están hechas para recordarse.
 
 ¿Y tú, de qué te fías todavía de memoria?
 
@@ -64,14 +62,12 @@ TEMA: IA y equipos de forwarding, más tiempo para lo que aporta
 FORMATO: solo texto
 ---
 
-Lo que más echo de menos del trabajo es hablar con la gente.
+Hablo con mucha gente cada semana. Y aun así, siempre me falta tiempo para hablar.
 
-No lo digo por quedar bien. Hay semanas que se me van entre pantallas y cuando levanto la cabeza ya es viernes y no he tenido una conversación de verdad.
+Parece una contradicción. No lo es. Lo que me come el tiempo no son las llamadas: es todo lo que hay antes y después. Preparar, apuntar, repasar, volver a apuntar.
 
-Por eso me interesa tanto que la IA haga lo pesado. No para hacer más. Para que quede hueco para lo que no sale en ningún informe: llamar a un cliente, resolver una duda con calma, escuchar.
+Por eso me interesa que la IA se encargue de lo pesado. No para llamar a más gente. Para poder charlar de verdad con la que ya llamo: sin prisa, sin mirar el reloj, dejando que el otro cuente lo que le preocupa.
 
-Puede que me equivoque, ojo. Todo esto va tan rápido que cualquier certeza me suena sospechosa.
+Al final, esa charla es lo que de verdad cuenta.
 
-Pero si al final del día me quedan cinco minutos para hablar con alguien, lo cuento como victoria.
-
-¿Y tú, en qué se te va el tiempo que querrías dedicar a las personas?
+¿Y si la IA nos diera tiempo para eso?
