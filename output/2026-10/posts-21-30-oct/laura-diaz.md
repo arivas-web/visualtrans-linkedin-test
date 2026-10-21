@@ -1,6 +1,6 @@
-# PRUEBA — Laura Díaz, voz 100% humana (21-30 oct) — v2 con feedback de Laura
+# PRUEBA — Laura Díaz, voz 100% humana (21-30 oct) — v3 con feedback de Laura
 
-Laura es SDR de un proveedor (Visual Trans): llama, prospecta y hace seguimiento. No es operativa de tráfico ni de aduanas ni jefa de equipo. Las metáforas salen de su propio trabajo. Sin hashtags, sin cifras. Las frases en primera persona son orientativas: Laura debe confirmarlas antes de publicar.
+Laura es SDR de un proveedor (Visual Trans): habla con mucha gente. No es operativa de tráfico ni de aduanas ni jefa de equipo. Las metáforas salen de su propio trabajo, sin lenguaje comercial: nada de "leads", "CRM" ni números; siempre personas. Sin hashtags, sin cifras. Las frases en primera persona son orientativas: Laura debe confirmarlas antes de publicar.
 
 ---
 FECHA: miércoles 21/10 10:00
@@ -10,11 +10,11 @@ FORMATO: solo texto
 
 Confieso una cosa.
 
-Hay partes de mi trabajo que no son hablar con nadie. Buscar el cargo de una persona en tres sitios. Copiar el teléfono al CRM. Escribir el mismo correo de seguimiento con un nombre distinto.
+Hay partes de mi trabajo que no son hablar con nadie. Buscar quién es la persona adecuada en tres sitios. Apuntar lo que me han contado. Escribir el mismo mensaje de agradecimiento cambiando solo el nombre.
 
-Eso no es vender. Es picar datos.
+Eso es papeleo, no conversación.
 
-Ahora le dejo a la IA lo aburrido. Lo de descolgar el teléfono y entender qué le quita el sueño al otro lado, eso me lo quedo yo.
+Ahora le dejo a la IA lo repetitivo. Lo de descolgar el teléfono y escuchar de verdad qué le preocupa a la persona del otro lado, eso me lo quedo yo.
 
 No sé si es la mejor forma de usarla. Pero esta semana he llegado a las llamadas con la cabeza más despejada, y eso ya cuenta.
 
@@ -26,15 +26,15 @@ TEMA: Pain #20, control y visibilidad
 FORMATO: solo texto
 ---
 
-Un lead se me enfrió sin que nadie lo notara.
+Prometí a alguien volver a llamarle y se me olvidó.
 
-Hablé con él, quedamos en retomarlo y la nota se quedó en un cuaderno. Tres semanas después, nada. Ni mala fe ni falta de ganas. Simplemente no había un sitio donde se viera.
+Hablamos, quedamos en retomarlo y mi nota se quedó en un cuaderno. Tres semanas después, nada. Ni mala fe ni falta de ganas: simplemente no había un sitio donde se viera que estaba pendiente.
 
 Y pasa en cualquier trabajo. Lo importante se queda parado porque nadie lo ve parado.
 
 No es falta de compromiso. Es falta de visibilidad.
 
-Desde que lo apunto todo donde se ve, me enfrío menos y llego a tiempo.
+Desde que lo apunto en un sitio donde se ve, me olvido menos y llego a tiempo.
 
 ¿Qué se te está quedando parado ahora mismo sin que lo veas? 👇
 
@@ -44,17 +44,15 @@ TEMA: Aranceles cambiantes, no se pueden llevar de memoria
 FORMATO: solo texto
 ---
 
-Cada semana hablo con gente que se sabe los aranceles de memoria.
+Cuando hablo con gente del sector transitario, hay algo que se repite: lo que era cierto el año pasado ya no lo es.
 
-Y lo respeto. Pero yo veo el otro lado: la memoria es de las cosas que más nos fallan sin avisar.
+Aranceles, medidas, requisitos. Cambian tanto y tan seguido que nadie puede ir al día solo con lo que recuerda.
 
-A mí me pasa con mi propio trabajo. Juraría que sé en qué punto está cada conversación con un cliente. Hasta que miro mis notas y resulta que no era así.
+Yo lo noto a mi pequeña escala. Una persona con la que hablé hace un mes ya está en otro momento, con otras prioridades. Si me fío de lo que recuerdo, voy con información vieja.
 
-Si me falla con lo mío, que cambia poco, imagina con algo que se actualiza cada año.
+No es descuido. Es que hay cosas que cambian más rápido de lo que se puede memorizar.
 
-No es tener mala memoria. Es que hay cosas que no están hechas para recordarse.
-
-¿Y tú, de qué te fías todavía de memoria?
+¿Cómo te mantienes tú al día cuando todo cambia tan rápido?
 
 ---
 FECHA: viernes 30/10 10:00
@@ -64,10 +62,12 @@ FORMATO: solo texto
 
 Hablo con mucha gente cada semana. Y aun así, siempre me falta tiempo para hablar.
 
-Parece una contradicción. No lo es. Lo que me come el tiempo no son las llamadas: es todo lo que hay antes y después. Preparar, apuntar, repasar, volver a apuntar.
+Parece una contradicción. No lo es. Lo que me come el tiempo no son las conversaciones: es todo lo que hay antes y después. Preparar, apuntar, repasar, volver a apuntar.
 
-Por eso me interesa que la IA se encargue de lo pesado. No para llamar a más gente. Para poder charlar de verdad con la que ya llamo: sin prisa, sin mirar el reloj, dejando que el otro cuente lo que le preocupa.
+Y me cuentan que en el mundo transitario pasa igual. Gente que sabe un montón del cliente y, entre papeles y gestiones, apenas tiene un rato para charlar con él.
 
-Al final, esa charla es lo que de verdad cuenta.
+Pasa en todos los sectores. Quien mejor conoce a las personas es quien menos tiempo tiene para estar con ellas.
+
+Por eso me interesa que la IA se encargue de lo pesado. Para poder charlar de verdad, sin prisa, y dejar que el otro cuente lo que le preocupa.
 
 ¿Y si la IA nos diera tiempo para eso?
