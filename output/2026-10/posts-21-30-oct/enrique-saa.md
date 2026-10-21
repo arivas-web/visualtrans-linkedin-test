@@ -59,11 +59,11 @@ TEMA: Tariff Code: una pulsera de actividad, dos códigos y la diferencia de ara
 FORMATO: imagen
 ---
 
-Entre [CÓDIGO A] y [CÓDIGO B] hay un [X %] de arancel. Y el producto es el mismo.
+Entre el 9102120000 y el 8517620000 hay un 4,5 % de arancel. Y el producto es el mismo.
 
 Javier importa pulseras de actividad. Según cómo las describa, puede acabar en un código o en otro.
 
-En un contenedor de 100.000 €, esa diferencia son [IMPORTE €].
+En un contenedor de 100.000 €, esa diferencia son 4.500 €.
 
 Con Tariff Code lo resuelves en tres pasos:
 
@@ -109,7 +109,7 @@ No es solo software, es responsabilidad legal.
 - Sin DeCA, eCMR, factura electrónica ni Verifactu, según feedback de Adrián.
 - 22/10: la fecha 21/09/2027 viene del calendario validado. Noticias_Sector.txt indica que las fuentes no coinciden en la entrada en vigor (20 o 21/09/2026) y pide verificar en EUR-Lex; confirmar antes de publicar. "Doce meses" se toma de "tras 12 meses de adaptación" de esa misma entrada. Se omiten las fechas del Centro de Datos (2028/2034) por ser extractos sin contrastar.
 - 26/10: abre con afirmación, no con cifra, porque no hay dato verificable (el 54 % del informe de Infobae está sin verificar y no se cita). Marcador [ENLACE] para el recurso del primer comentario. No se menciona Tariff Code por nombre para no pisar los posts del 26/10 (VT) y 28/10.
-- 28/10: marcadores [CÓDIGO A], [CÓDIGO B], [X %], [IMPORTE €] sin rellenar; no hay datos verificados. Producto propuesto: pulsera de actividad (distinto de la freidora de aire de Enrique del 20/10); hay que comprobar en Tariff Code que da dos códigos con diferencia de arancel real y que no coincide con los productos elegidos por VT (26/10, 30/10) y Emma (22/10, 29/10), que no he podido consultar. "Javier" es un personaje ilustrativo. Aperturas con marcadores, no con cifra real: si no se rellenan, no publicar.
+- 28/10: códigos y arancel tomados de nuestro post del 31/10/2025 sobre la pulsera (9102120000 al 4,5 % vs 8517620000 al 0 %; 4.500 € por 100.000 €); revisar que sigan vigentes en Tariff Code. Producto propuesto: pulsera de actividad (distinto de la freidora de aire de Enrique del 20/10); hay que comprobar en Tariff Code que da dos códigos con diferencia de arancel real y que no coincide con los productos elegidos por VT (26/10, 30/10) y Emma (22/10, 29/10), que no he podido consultar. "Javier" es un personaje ilustrativo. Aperturas con marcadores, no con cifra real: si no se rellenan, no publicar.
 - 29/10: la apertura usa fechas de ICS2 del briefing (1/1/2026 y 1/6/2026, cinco países), no una cifra de coste, para no inventar importes. El pain #13 se redacta sin venta directa ni cifras de precio.
 - Longitud: 22/10 y 29/10 en rango 500-800; 26/10 y 28/10 pueden quedar algo por encima o por debajo según se rellenen los marcadores; revisar tras sustituirlos.
 - Emojis: ⏳ y 👇 (22/10); ✔️ y 👇 (26 y 28/10); 📅 y 👇 (29/10).
