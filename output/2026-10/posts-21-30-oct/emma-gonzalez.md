@@ -62,7 +62,7 @@ Un dato. Tres sitios distintos.
 
 El mismo NIF, la misma mercancía, el mismo importe: en la cotización, en el expediente y en la factura. Cada uno en su sistema, cada uno a mano.
 
-Según lo que he visto en el día a día, copiar así se lleva [MINUTOS POR EXPEDIENTE] por expediente. Con [N EXPEDIENTES AL MES], son [HORAS AL MES] perdidas.
+Según lo que he visto en el día a día, copiar así se lleva aproximadamente la mitad del tiempo de cada expediente [ESTIMACIÓN ~50 %: CORREGIR CON DATO REAL].
 
 Eso no es solo tiempo. Es el caldo de cultivo perfecto para el error.
 

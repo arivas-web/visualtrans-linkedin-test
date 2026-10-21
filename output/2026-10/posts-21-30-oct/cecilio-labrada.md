@@ -32,7 +32,7 @@ FORMATO: imagen
 
 1 de noviembre. Es la fecha prevista para la tasa por paquete de bajo valor en e-commerce.
 
-[IMPORTE TASA] por paquete. Parece poco. Hasta que lo multiplicas por el volumen de un mes.
+Se estima en torno a 2 € por paquete, pendiente de confirmar. Parece poco. Hasta que lo multiplicas por el volumen de un mes.
 
 Pero el problema no es la tasa. El problema es cotizar hoy sin decidir dónde se repercute. Si no aparece como concepto propio en la oferta, la absorbes tú. Sin contar un margen que ya venía justo.
 

@@ -9,9 +9,9 @@ FORMATO: carrusel
 
 3 €.
 
-Es el derecho de aduana fijo que ya se aplica a los envíos de e-commerce de bajo valor desde el 1 de julio, [por tipo de artículo / por envío: CONFIRMAR EN FUENTE OFICIAL].
+Es el derecho de aduana fijo que ya se aplica a los envíos de e-commerce de bajo valor desde el 1 de julio. Se aplica por cada categoría arancelaria (subpartida) dentro del paquete, en envíos IOSS y postales.
 
-Y el 1 de noviembre llega lo siguiente: la tasa de tramitación. Importe previsto: [IMPORTE € PREVISTO, pendiente de confirmación de la Comisión].
+Y el 1 de noviembre llega lo siguiente: la tasa de tramitación. Se estima en torno a 2 € por paquete, pendiente de confirmar.
 
 Para quien tramita, tres cosas que ya cambian:
 
