@@ -523,3 +523,25 @@ La diferencia entre un código y otro se nota desde el primer despacho.
 → El porqué de ese código
 
 ¿Te ha pasado alguna vez con un producto de este tipo?
+
+=== EMMA-2026-10-29-emma-tariff-frutos-secos-v2 ===
+FECHA: 2026-10-29
+PERFIL: Emma González
+PILAR: Pain
+FORMATO: imagen
+INSTRUCCIONES_IMAGEN: Sin logo. Regenerar la gráfica: corregir las proporciones. Los sacos de frutos secos deben tener un tamaño realista y proporcionado respecto al agente de aduanas (un saco de unos 25 kg llega aproximadamente a la cintura/rodilla de una persona, no es más grande que él ni parece de juguete). Mantener el resto de la composición y el estilo.
+TEXTO:
+0802908500 o 2008199900. Unos frutos secos, 3.800 € de diferencia.
+
+Parece una curiosidad. En la aduana es una decisión.
+
+¿Son frutos secos al natural o frutos secos preparados? Según cómo se presenten, cambia el código y cambia el arancel.
+
+En un contenedor estándar, la diferencia es de 3.800 €.
+
+La diferencia entre un código y otro se nota desde el primer despacho.
+
+→ El código correcto
+→ El porqué de ese código
+
+¿Te ha pasado alguna vez con un producto de este tipo?
