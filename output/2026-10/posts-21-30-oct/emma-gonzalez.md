@@ -3,15 +3,15 @@ PERFIL: Emma González
 FECHA: jueves 22/10
 PILAR: Tariff Code
 PAIN #: —
-TEMA: Producto cotidiano (freidora de aire), dos códigos posibles y la diferencia en euros
+TEMA: Producto cotidiano (pulsera de actividad), dos códigos posibles y la diferencia en euros
 FORMATO: imagen
 ---
 
-[CÓDIGO A] vs. [CÓDIGO B]. [IMPORTE €] de diferencia en una freidora de aire.
+9102120000 vs. 8517620000. 4.500 € de diferencia en una pulsera de actividad.
 
-Sí, la que tienes en la cocina. Mismo producto, dos clasificaciones posibles según [CRITERIO: función / material / potencia].
+Sí, la que llevas en la muñeca. Mismo producto, dos clasificaciones posibles según cómo se describa su función: reloj electrónico o aparato de transmisión de datos.
 
-Una lleva [X %] de arancel. La otra, [Y %]. Sobre una partida de [VALOR €], eso son [IMPORTE €].
+Una lleva un 4,5 % de arancel. La otra, un 0 %. Sobre una partida de 100.000 €, eso son 4.500 €.
 
 Y lo peor de todo es que no se nota hasta que llega la liquidación.
 
@@ -77,17 +77,17 @@ PERFIL: Emma González
 FECHA: jueves 29/10
 PILAR: Tariff Code
 PAIN #: —
-TEMA: Curiosidad arancelaria: mismo producto (peluche con sonido), distinto código, distinto coste
+TEMA: Curiosidad arancelaria: mismo producto (frutos secos), distinto código, distinto coste
 FORMATO: imagen
 ---
 
-[CÓDIGO A] o [CÓDIGO B]. Un peluche que habla, [IMPORTE €] de diferencia.
+0802908500 o 2008199900. Unos frutos secos, 3.800 € de diferencia.
 
 Parece una curiosidad. En la aduana es una decisión.
 
-¿Es un juguete o es un aparato electrónico con forma de peluche? Según [CRITERIO DE CLASIFICACIÓN], cambia el código y cambia el arancel: [X %] frente a [Y %].
+¿Son frutos secos al natural o frutos secos preparados? Según cómo se presenten, cambia el código y cambia el arancel.
 
-Sobre [VALOR € DE LA PARTIDA], la diferencia es de [IMPORTE €].
+En un contenedor estándar, la diferencia es de 3.800 €.
 
 La diferencia entre un código y otro se nota desde el primer despacho.
 
@@ -102,10 +102,10 @@ La diferencia entre un código y otro se nota desde el primer despacho.
 
 - Sin DeCA, eCMR, factura electrónica ni Verifactu. Sin hashtags (Emma no los usa).
 - Marcadores pendientes (no hay dato verificable en briefing, noticias ni calendario):
-  - 22/10: [CÓDIGO A], [CÓDIGO B], [CRITERIO], [X %], [Y %], [VALOR €], [IMPORTE €].
+  - 22/10: pulsera de actividad con códigos y arancel de nuestro post del 31/10/2025 (9102120000 al 4,5 % vs 8517620000 al 0 %, 4.500 € por 100.000 €). Confirmar en Tariff Code que siguen vigentes.
   - 26/10: ninguno de cifra. Fecha del Diario Oficial (19/09) y "12 meses" salen de Noticias_Sector; la fecha exacta de entrada en vigor no coincide entre fuentes (20 o 21/09/2026), por eso no se cita. Verificar en EUR-Lex antes de publicar. Fuente al primer comentario: Noticias Jurídicas y Diario del Puerto (URLs en Noticias_Sector).
   - 28/10: [MINUTOS POR EXPEDIENTE], [N EXPEDIENTES AL MES], [HORAS AL MES]. NIF/mercancía/importe como ejemplo de dato repetido: ilustrativo, no es cifra.
-  - 29/10: [CÓDIGO A], [CÓDIGO B], [CRITERIO DE CLASIFICACIÓN], [X %], [Y %], [VALOR € DE LA PARTIDA], [IMPORTE €].
+  - 29/10: frutos secos con códigos e importe de nuestras voces (0802908500 vs 2008199900, 3.800 € en un contenedor estándar). No tenemos los porcentajes, por eso no se citan. Confirmar en Tariff Code.
 - Productos de Tariff Code elegidos: freidora de aire (22/10) y peluche con sonido (29/10). Los códigos y la clasificación real de ambos hay que verificarlos (o sustituir el producto por otro con clasificación comprobada). Coordinar con los posts de VT (26 y 30/10) y Enrique (28/10), aún no redactados, para que no repitan producto.
 - 22/10 y 29/10: ambos usan "→ El código correcto / → El porqué" de la voz de Emma; cierres con pregunta distinta. Aperturas dato-impacto (E-R2) con variaciones: "vs." el 22 y "o" el 29.
 - 26/10: tres puntos 1️⃣2️⃣3️⃣ son propuestas de preparación de criterio general, sin dato normativo añadido. Apertura con cifra (12 meses, de Noticias_Sector).

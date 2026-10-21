@@ -84,9 +84,9 @@ TEMA: Tariff Code: producto cotidiano, dos códigos posibles y la diferencia en 
 FORMATO: imagen
 ---
 
-[DIFERENCIA] € de diferencia por un solo producto: [PRODUCTO A, cotidiano y verificable].
+3.800 € de diferencia por un solo producto: unos frutos secos.
 
-Según cómo se describa, puede ir por el código [CÓDIGO A] o por el [CÓDIGO B]. Con [ARANCEL A] % en un caso y [ARANCEL B] % en el otro, sobre una mercancía de [VALOR €], la diferencia es [DIFERENCIA] €.
+Según cómo se describa, puede ir por el código 0802908500 o por el 2008199900. En un contenedor estándar, la diferencia es de 3.800 €.
 
 Con Tariff Code se hace en tres pasos:
 
@@ -190,7 +190,7 @@ FORMATO: imagen
 
 ¿Cuánto cuesta equivocarte de partida arancelaria?
 
-Con [PRODUCTO B, cotidiano y distinto de PRODUCTO A], [DIFERENCIA] €. Entre el código [CÓDIGO C] y el [CÓDIGO D] hay [ARANCEL C] % frente a [ARANCEL D] %, sobre una mercancía de [VALOR €].
+Con una pulsera de actividad, 4.500 €. Entre el código 9102120000 y el 8517620000 hay un 4,5 % frente a un 0 %, sobre una mercancía de 100.000 €.
 
 Un detalle de la descripción cambia el código. Y el código cambia el coste.
 
